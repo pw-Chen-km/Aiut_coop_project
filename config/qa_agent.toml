@@ -4,7 +4,7 @@ model = "Qwen/Qwen3-Embedding-8B"
 revision = "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af"
 cache_dir = "../models"
 [runtime]
-endpoint = "http://127.0.0.1:8080/v1"
+endpoint = "http://127.0.0.1:11440"
 model = "qwen3.8:27b-q4_K_M"
 context_tokens = 32768
 temperature = 0
