@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navigation RAG 測試介面</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">QURSOR KNOWLEDGE ASSISTANT</p>
+        <h1>Navigation RAG</h1>
+      </div>
+      <div class="connection" aria-live="polite">
+        <span id="statusDot" class="status-dot"></span>
+        <span id="statusText">檢查服務中</span>
+      </div>
+    </header>
+    <section id="chat" class="chat" aria-live="polite" aria-label="聊天紀錄">
+      <div class="welcome">
+        <span class="welcome-mark">A</span>
+        <h2>測試來源階層導航</h2>
+        <p>詢問 Qursor 操作、設定、Kanban 或交通區域相關問題。</p>
+      </div>
+    </section>
+    <form id="composer" class="composer">
+      <label for="question" class="sr-only">輸入問題</label>
+      <textarea id="question" rows="1" maxlength="6000" placeholder="輸入問題…" required></textarea>
+      <button id="send" type="submit">送出</button>
+      <p class="hint">Enter 送出 · Shift + Enter 換行</p>
+    </form>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

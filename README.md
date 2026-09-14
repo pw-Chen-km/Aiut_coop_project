@@ -2,7 +2,9 @@
 
 This is the production handoff package for the source-hierarchy (A) navigation skill. It is independent from the research repository and contains no B/C artifacts.
 
-Set the model endpoint and embedding settings in `config/qa_agent.toml`, then run `./run.ps1`. The stable HTTP contract is `POST /v1/answer` with `{qid, question, history?}` and the existing qa-agent result JSON. Health endpoints are `/health/live` and `/health/ready`.
+Set the model endpoint and embedding settings in `config/qa_agent.toml`, then run `./run.ps1`. Open `http://127.0.0.1:8080` for the browser test console. Each message shows its timestamp and the answer's elapsed time.
+
+The stable HTTP contract is `POST /v1/answer` with `{qid, question, history?}` and the existing qa-agent result JSON. Health endpoints are `/health/live` and `/health/ready`.
 
 Validate the immutable skill bundle before deployment:
 

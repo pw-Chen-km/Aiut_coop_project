@@ -1,0 +1,43 @@
+:root {
+  --ink: #17211c; --muted: #68746d; --line: #dce3de; --paper: #f3f5f1;
+  --panel: #fffef9; --green: #1f6b4f; --green-soft: #dcece4; --error: #a33a32;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: Inter, "Noto Sans TC", "Segoe UI", sans-serif; }
+button, textarea { font: inherit; }
+.shell { width: min(920px, 100%); min-height: 100%; margin: 0 auto; display: grid; grid-template-rows: auto 1fr auto; background: var(--panel); border-inline: 1px solid var(--line); }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 28px 20px; border-bottom: 1px solid var(--line); }
+.eyebrow { margin: 0 0 4px; font-size: 11px; font-weight: 700; letter-spacing: .13em; color: var(--green); }
+h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 27px; font-weight: 500; }
+.connection { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; background: #aa7b2e; }
+.status-dot.ready { background: #2f8a60; box-shadow: 0 0 0 3px var(--green-soft); }
+.status-dot.error { background: var(--error); }
+.chat { min-height: 0; overflow-y: auto; padding: 32px 28px 24px; }
+.welcome { max-width: 520px; margin: 9vh auto 32px; text-align: center; color: var(--muted); }
+.welcome-mark { display: grid; place-items: center; width: 42px; height: 42px; margin: 0 auto 18px; border-radius: 50%; background: var(--green); color: white; font-family: Georgia, serif; font-size: 20px; }
+.welcome h2 { margin: 0 0 9px; color: var(--ink); font-size: 20px; font-weight: 600; }
+.welcome p { margin: 0; line-height: 1.6; }
+.message { display: flex; margin: 0 0 22px; }
+.message.user { justify-content: flex-end; }
+.bubble { max-width: min(690px, 88%); }
+.bubble-body { padding: 13px 16px; border: 1px solid var(--line); border-radius: 4px 16px 16px 16px; background: white; line-height: 1.65; white-space: pre-wrap; overflow-wrap: anywhere; }
+.user .bubble-body { color: white; background: var(--green); border-color: var(--green); border-radius: 16px 4px 16px 16px; }
+.message.error .bubble-body { color: var(--error); background: #fff7f5; border-color: #e8c5c0; }
+.meta { display: flex; gap: 10px; margin-top: 7px; color: var(--muted); font-size: 12px; }
+.user .meta { justify-content: flex-end; }
+.citations { margin: 10px 0 0; padding-left: 19px; color: var(--muted); font-size: 13px; }
+.thinking .bubble-body { display: flex; align-items: center; gap: 6px; color: var(--muted); }
+.thinking i { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 1.1s infinite; }
+.thinking i:nth-child(2) { animation-delay: .15s; } .thinking i:nth-child(3) { animation-delay: .3s; }
+@keyframes pulse { 0%, 70%, 100% { opacity: .25; transform: translateY(0); } 35% { opacity: 1; transform: translateY(-3px); } }
+.composer { position: sticky; bottom: 0; display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 18px 28px 14px; background: rgba(255, 254, 249, .96); border-top: 1px solid var(--line); }
+textarea { width: 100%; max-height: 160px; resize: none; padding: 13px 15px; color: var(--ink); background: white; border: 1px solid #bfc9c2; border-radius: 10px; outline: none; line-height: 1.45; }
+textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft); }
+button { align-self: end; min-height: 48px; padding: 0 22px; border: 0; border-radius: 10px; color: white; background: var(--green); cursor: pointer; font-weight: 650; }
+button:hover { background: #185940; } button:focus-visible { outline: 3px solid #a9cfbc; outline-offset: 2px; } button:disabled { opacity: .5; cursor: wait; }
+.hint { grid-column: 1 / -1; margin: -2px 2px 0; color: var(--muted); font-size: 11px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 640px) { .shell { border: 0; } .topbar { padding: 18px 16px; } .eyebrow { display: none; } h1 { font-size: 22px; } .chat { padding: 24px 16px 18px; } .welcome { margin-top: 6vh; } .composer { padding: 14px 16px 10px; } .bubble { max-width: 94%; } }
+@media (prefers-reduced-motion: reduce) { .thinking i { animation: none; } }
