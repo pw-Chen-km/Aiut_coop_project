@@ -16,6 +16,16 @@ sys.path.insert(0, str(ROOT / "src"))
 from qa_agent.bundle import validate_serving_bundle
 
 
+def _session_factory(config):
+    """Select the runtime matching the immutable embedding in the A bundle."""
+    manifest = validate_serving_bundle(config["bundle_dir"])
+    if manifest.get("embedding", {}).get("encoder") == "qwen3_remote":
+        from qa_agent.factory import create_comparison_session
+        return create_comparison_session
+    from qa_agent.factory import create_session
+    return create_session
+
+
 class Handler(BaseHTTPRequestHandler):
     def _json(self, code: int, value: dict) -> None:
         body = json.dumps(value, ensure_ascii=False).encode("utf-8")
@@ -70,10 +80,10 @@ class Handler(BaseHTTPRequestHandler):
             question = row.get("question")
             if not isinstance(question, str) or not question.strip():
                 raise ValueError("question must be nonempty text")
-            from qa_agent.factory import create_session, load_online_config
+            from qa_agent.factory import load_online_config
 
             config = load_online_config(os.environ["QA_CONFIG"])
-            with create_session(config) as session:
+            with _session_factory(config)(config) as session:
                 arguments = {"qid": row.get("qid", "interactive")}
                 if "history" in row:
                     arguments["history"] = row["history"]

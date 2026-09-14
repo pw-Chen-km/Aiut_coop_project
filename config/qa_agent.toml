@@ -1,16 +1,27 @@
 bundle_dir = "../skill-bundle"
 [embedding]
+encoder = "qwen3_remote"
 model = "Qwen/Qwen3-Embedding-8B"
 revision = "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af"
-cache_dir = "../models"
+endpoint = "http://127.0.0.1:11441"
+tokenizer_dir = "../models/qwen3-embedding-tokenizer"
+generation_endpoint = "http://127.0.0.1:11440"
+generation_model = "qwen3.8:27b-q4_K_M"
 [runtime]
 endpoint = "http://127.0.0.1:11440"
 model = "qwen3.8:27b-q4_K_M"
+digest = "REPLACE_WITH_64_HEX_OLLAMA_DIGEST"
+ollama_version = "0.33.3"
 context_tokens = 32768
+max_output_tokens = 512
+timeout_seconds = 900
 temperature = 0
-execution_mode = "gpu_test"
-cpu_only = false
-gpu_layers = 999
+think = false
+schema_mode = "native"
+generation_mode = "chat"
+tokenizer_executable = "../models/llama-tokenize.exe"
+gguf_path = "../models/qwen27b-tokenizer.gguf"
+tokenizer_source_manifest = "../models/qwen27b-tokenizer.json"
 [retrieval]
 top_k = 20
 [loop]
