@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:20:29.247729917Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Configuration Reference\"\n  ],\n  \"question_intents\": [\n    \"What parameters and conditions are configured in the Trigger section?\"\n  ],\n  \"summary\": \"The Trigger section defines configurable job parameters such as station, destination, AGV type, and execution conditions. It also specifies four distinct condition types—Station status, Station items, Dynamic station, and Custom parameter—that must be selected from drop-down or defined lists.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4219626272,
+  "load_duration": 1904248,
+  "prompt_eval_count": 444,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 363152000,
+  "eval_count": 109,
+  "eval_duration": 3632626000
+}

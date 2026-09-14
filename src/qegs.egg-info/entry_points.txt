@@ -1,0 +1,8 @@
+[console_scripts]
+doc2skill = doc2skill.cli:main
+qa-agent = qa_agent.cli:main
+qa-benchmarks = qa_benchmarks.cli:main
+qa-experiments = qa_experiments.cli:main
+qa-skillopt = qa_skillopt.cli:main
+qegs = qegs.cli:main
+qegs-evaluate-answers = evaluation.evaluate_answers:main

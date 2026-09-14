@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:22:54.37938784Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"instructional\"\n  ],\n  \"question_intents\": [\n    \"How to access and manage station details\"\n  ],\n  \"summary\": \"The Details tab provides a universal view for monitoring and controlling station statuses, illustrated by the A1 station. It includes an overview of specific control buttons for actions such as disabling the station, switching to autonomous mode, and viewing tasks.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3930481037,
+  "load_duration": 1637318,
+  "prompt_eval_count": 432,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 361356000,
+  "eval_count": 100,
+  "eval_duration": 3345900000
+}

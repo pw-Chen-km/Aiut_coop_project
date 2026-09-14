@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:19:14.999532051Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Reference\"\n  ],\n  \"question_intents\": [\n    \"What are the basic parameters and status indicators for AGV stations?\"\n  ],\n  \"summary\": \"This section defines stations as sites for AGV loading, unloading, and parking, detailing their basic parameters such as ID, Map ID, Name, and Reserved status. It also describes the user interface elements that display the AGV load state, current task, and presence status at these stations.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4514635803,
+  "load_duration": 1612562,
+  "prompt_eval_count": 471,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 379793000,
+  "eval_count": 117,
+  "eval_duration": 3913857000
+}

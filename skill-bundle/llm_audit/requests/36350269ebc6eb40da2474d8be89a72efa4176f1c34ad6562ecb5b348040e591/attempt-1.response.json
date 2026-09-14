@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:18:46.588612735Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"UI Documentation\"\n  ],\n  \"question_intents\": [\n    \"How to manage locations in the dashboard\"\n  ],\n  \"summary\": \"This section defines AGV locations as specific points for loading, unloading, or parking, including types such as chargers and wait points. It details the dashboard interface for managing these locations, covering actions like viewing assets, checking status indicators, and modifying settings such as adding conveyors or disabling stations.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4501551274,
+  "load_duration": 1725325,
+  "prompt_eval_count": 458,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 376342000,
+  "eval_count": 114,
+  "eval_duration": 3813794000
+}

@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:20:58.751991843Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [\n    \"Kanban Data Transfer\"\n  ],\n  \"content_type\": [\n    \"instructions\"\n  ],\n  \"question_intents\": [\n    \"How to import and export Kanbans\"\n  ],\n  \"summary\": \"This section covers the procedures for exporting Kanbans as .zip files and the requirements for importing them, including necessary data fields and available actions. It details how to select items and versions for export, as well as the specific inputs and default behaviors involved in the ingestion process.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4593182658,
+  "load_duration": 1572519,
+  "prompt_eval_count": 490,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 383156000,
+  "eval_count": 120,
+  "eval_duration": 3986468000
+}

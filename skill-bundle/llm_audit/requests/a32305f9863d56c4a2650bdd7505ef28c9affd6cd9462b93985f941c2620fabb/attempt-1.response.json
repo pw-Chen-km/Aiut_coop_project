@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:21:23.149000413Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [\n    \"Qursor M.A.P. User Guide\"\n  ],\n  \"content_type\": [\n    \"User Guide\"\n  ],\n  \"question_intents\": [\n    \"How to use Qursor M.A.P. for AGV management and Kanban configuration\"\n  ],\n  \"summary\": \"This user guide provides comprehensive instructions for the Qursor M.A.P. interface, covering initial login, application settings, and the main dashboard for monitoring AGVs, stations, and tasks. It details operational workflows for task execution, AGV diagnostics, and issue management, with a significant focus on the definition, configuration, execution, and production application of Kanbans.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 5760024398,
+  "load_duration": 1902791,
+  "prompt_eval_count": 461,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 378210000,
+  "eval_count": 152,
+  "eval_duration": 5059364000
+}

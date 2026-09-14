@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:15:47.533077136Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"procedural\"\n  ],\n  \"question_intents\": [\n    \"How to clear faults\"\n  ],\n  \"summary\": \"This section provides the procedure for clearing current faults on an AGV, requiring the device to be in manual or setup mode. It instructs the user to verify and remove the fault source, then press the Clear faults button to move the faults to the Historic faults tab, where they are stored for 8 hours.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4460920951,
+  "load_duration": 1769555,
+  "prompt_eval_count": 410,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 355909000,
+  "eval_count": 115,
+  "eval_duration": 3865156000
+}

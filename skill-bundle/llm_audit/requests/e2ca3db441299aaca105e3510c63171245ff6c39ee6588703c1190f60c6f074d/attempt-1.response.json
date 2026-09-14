@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:17:57.472280562Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"description\"\n  ],\n  \"question_intents\": [\n    \"How to view executed tasks\"\n  ],\n  \"summary\": \"This section details the status data and task types displayed in the Stations list, including how to switch between autonomous and automatic modes. It also explains how to access the list of finished tasks and view the details of the task currently executing at the station.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3964733427,
+  "load_duration": 1782604,
+  "prompt_eval_count": 518,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 408324000,
+  "eval_count": 100,
+  "eval_duration": 3331574000
+}

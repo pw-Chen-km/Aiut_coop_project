@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:20:49.039269342Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Field Definitions\"\n  ],\n  \"question_intents\": [\n    \"What fields and actions are involved in the Kanban import process?\"\n  ],\n  \"summary\": \"The Import section defines the data fields required for Kanban ingestion, such as file name, Kanban ID, and version number. It also outlines the available import actions, including adding new versions or Kanbans, and explains how default behaviors are determined based on existing system data.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4456360584,
+  "load_duration": 1545386,
+  "prompt_eval_count": 550,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 414203000,
+  "eval_count": 115,
+  "eval_duration": 3817630000
+}

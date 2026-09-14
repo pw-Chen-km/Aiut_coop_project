@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:19:41.769608171Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Documentation\"\n  ],\n  \"question_intents\": [\n    \"How to manage reported issues\"\n  ],\n  \"summary\": \"The Issues section defines user-reported problems and details the interface for viewing, filtering, searching, and exporting them, including status indicators and actions for reporting, editing, or removing entries. It is accompanied by administrative version information for the Qursor M.A.P. User Guide.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4088701665,
+  "load_duration": 1767096,
+  "prompt_eval_count": 466,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 377650000,
+  "eval_count": 105,
+  "eval_duration": 3506264000
+}

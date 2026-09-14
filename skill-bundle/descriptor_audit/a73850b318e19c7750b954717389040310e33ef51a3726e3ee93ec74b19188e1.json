@@ -1,0 +1,133 @@
+{
+  "status": "complete",
+  "data": {
+    "aliases": [],
+    "content_type": [
+      "navigation"
+    ],
+    "question_intents": [
+      "How to manage and monitor stations"
+    ],
+    "summary": "The Stations Choice Menu provides an overview of all stations within a plant project, accessible via the navigation bar. It includes tabs for searching and selecting specific stations, monitoring and controlling station statuses, and viewing current or historical task logs.",
+    "title": "Stations Choice Menu"
+  },
+  "response": {
+    "data": {
+      "aliases": [],
+      "content_type": [
+        "navigation"
+      ],
+      "question_intents": [
+        "How to manage and monitor stations"
+      ],
+      "summary": "The Stations Choice Menu provides an overview of all stations within a plant project, accessible via the navigation bar. It includes tabs for searching and selecting specific stations, monitoring and controlling station statuses, and viewing current or historical task logs."
+    },
+    "model": "qwen3.8:27b-q4_K_M",
+    "usage": {
+      "prompt_tokens": 640,
+      "completion_tokens": 97,
+      "total_tokens": 737
+    },
+    "elapsed_seconds": 7.485000000000582,
+    "raw_content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"navigation\"\n  ],\n  \"question_intents\": [\n    \"How to manage and monitor stations\"\n  ],\n  \"summary\": \"The Stations Choice Menu provides an overview of all stations within a plant project, accessible via the navigation bar. It includes tabs for searching and selecting specific stations, monitoring and controlling station statuses, and viewing current or historical task logs.\"\n}",
+    "cached": false,
+    "thinking_content": "",
+    "provenance": {
+      "stage": "node:9e3e771c56758996",
+      "attempts": 1,
+      "prompt_sha256": "bad8580d8c4d4f5b6f158a5f20549c7b91ee12217279b6ae9c908ce112326124",
+      "model_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "audit_dir": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\artifacts\\comparison\\qursor-jj-qwen27b-qwenembed-v3\\source\\llm_audit\\requests\\bad8580d8c4d4f5b6f158a5f20549c7b91ee12217279b6ae9c908ce112326124",
+      "tokenizer": {
+        "implementation": "llama.cpp",
+        "build": "10091",
+        "version": "version: 10091 (b4d6c7d8f)\r\nbuilt with Clang 20.1.8 for Windows x86_64",
+        "executable_sha256": "9b8cdf312884a25e16d876421f354282b42fe15ee9d9080f95e00249405a84d1",
+        "gguf_path": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\.tools\\jj-qwen27b\\tokenizer.gguf",
+        "gguf_sha256": "61fb287d6c5914300ba710334bb591ae41238147b52506d0fd58ce76b0248f48",
+        "add_special": true,
+        "parse_special": true,
+        "remote_model_path": "/home/jj/Large_Space_A/chiu/PW/ollama-qwen38/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "remote_blob_sha256": "f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "model_info_sha256": "9710a6b00da79d1450c9d6a603cfd8cf48c61c823baeecc84a13c9c80e11c086",
+        "metadata_only": true,
+        "tensor_count": 0,
+        "architecture_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "pretokenizer_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "source_manifest_sha256": "5f904d69530e991cf371dab754b285e1dbad4924d808271ec782da79d4f03fdb"
+      },
+      "measurement": {
+        "input_tokens": 640,
+        "context_length": 131072,
+        "output_reserve": 8192,
+        "available_input_tokens": 122880,
+        "rendered_prompt_sha256": "c317dec017aeaf00ffd63a3efc0b8d4cb3b1aecbe312cb2157de231b66e1d215",
+        "ollama_rendered_prompt_sha256": "c317dec017aeaf00ffd63a3efc0b8d4cb3b1aecbe312cb2157de231b66e1d215",
+        "appended_channel_header": ""
+      }
+    }
+  },
+  "descriptor_tokens": 82,
+  "stage": "node:9e3e771c56758996",
+  "records": {
+    "own_body": [
+      {
+        "title": "Stations Choice Menu",
+        "summary": "The Station Choice menu is located next to Simple View in the navigation bar and provides an overview of all stations created within the plant project.",
+        "content_type": [
+          "navigation"
+        ],
+        "question_intents": [
+          "location"
+        ],
+        "aliases": []
+      }
+    ],
+    "children": [
+      {
+        "node_id": "n_1c9755a712794a022cb23552",
+        "title": "Station choice tab",
+        "summary": "The section describes how to search for a specific station using the search bar, sort stations alphabetically, and select a station by clicking its button.",
+        "content_type": [
+          "Instructional"
+        ],
+        "question_intents": [
+          "How to select a station"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_e0518e627094a5db24bb0228",
+        "title": "Details tab",
+        "summary": "The Details tab provides a universal view for monitoring and controlling station statuses, illustrated by the A1 station. It includes an overview of specific control buttons for actions such as disabling the station, switching to autonomous mode, and viewing tasks.",
+        "content_type": [
+          "instructional"
+        ],
+        "question_intents": [
+          "How to access and manage station details"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_b69cbccb9b9083f26041b194",
+        "title": "Current/ History tab",
+        "summary": "The section explains how to view a station's ongoing and archived tasks by selecting the 'current' or 'history' button, which displays logs of running or finished tasks.",
+        "content_type": [
+          "Instructional"
+        ],
+        "question_intents": [
+          "How to view station tasks"
+        ],
+        "aliases": []
+      }
+    ]
+  },
+  "support_policy": "selected-block-ids-exact-full-block-v1",
+  "title_policy": "program-owned-fixed-model-names-new-v1"
+}

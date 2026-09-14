@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:21:59.001990879Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"instruction\"\n  ],\n  \"question_intents\": [\n    \"What is the function of the eye button and what details does it display?\"\n  ],\n  \"summary\": \"The eye button allows users to view detailed information about the currently running kanban step. Clicking the icon reveals specific data points such as kanban steps, priority, assigned AGVs, checkpoints, station addresses, and time to empty.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4168239066,
+  "load_duration": 1506458,
+  "prompt_eval_count": 436,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 361865000,
+  "eval_count": 107,
+  "eval_duration": 3579410000
+}

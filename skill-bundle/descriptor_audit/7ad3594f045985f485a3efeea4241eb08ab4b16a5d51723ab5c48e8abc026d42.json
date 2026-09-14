@@ -1,0 +1,97 @@
+{
+  "status": "complete",
+  "data": {
+    "aliases": [],
+    "content_type": [
+      "Technical Description"
+    ],
+    "question_intents": [
+      "How does the AGV identify goods using RFID?"
+    ],
+    "summary": "This section describes the use of RFID technology for goods identification, specifically detailing how an AGV detects and verifies RFID tags to identify risers. It covers the process of reading tag data and registering unique identifiers and riser types within the application.",
+    "title": "RFID"
+  },
+  "response": {
+    "data": {
+      "aliases": [],
+      "content_type": [
+        "Technical Description"
+      ],
+      "question_intents": [
+        "How does the AGV identify goods using RFID?"
+      ],
+      "summary": "This section describes the use of RFID technology for goods identification, specifically detailing how an AGV detects and verifies RFID tags to identify risers. It covers the process of reading tag data and registering unique identifiers and riser types within the application."
+    },
+    "model": "qwen3.8:27b-q4_K_M",
+    "usage": {
+      "prompt_tokens": 384,
+      "completion_tokens": 104,
+      "total_tokens": 488
+    },
+    "elapsed_seconds": 7.562999999994645,
+    "raw_content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Technical Description\"\n  ],\n  \"question_intents\": [\n    \"How does the AGV identify goods using RFID?\"\n  ],\n  \"summary\": \"This section describes the use of RFID technology for goods identification, specifically detailing how an AGV detects and verifies RFID tags to identify risers. It covers the process of reading tag data and registering unique identifiers and riser types within the application.\"\n}",
+    "cached": false,
+    "thinking_content": "",
+    "provenance": {
+      "stage": "node:c2a24a5a6684229b",
+      "attempts": 1,
+      "prompt_sha256": "2edc718b8605c643f888d402774d62f724b6da89c7162948ad017d393f7db830",
+      "model_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "audit_dir": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\artifacts\\comparison\\qursor-jj-qwen27b-qwenembed-v3\\source\\llm_audit\\requests\\2edc718b8605c643f888d402774d62f724b6da89c7162948ad017d393f7db830",
+      "tokenizer": {
+        "implementation": "llama.cpp",
+        "build": "10091",
+        "version": "version: 10091 (b4d6c7d8f)\r\nbuilt with Clang 20.1.8 for Windows x86_64",
+        "executable_sha256": "9b8cdf312884a25e16d876421f354282b42fe15ee9d9080f95e00249405a84d1",
+        "gguf_path": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\.tools\\jj-qwen27b\\tokenizer.gguf",
+        "gguf_sha256": "61fb287d6c5914300ba710334bb591ae41238147b52506d0fd58ce76b0248f48",
+        "add_special": true,
+        "parse_special": true,
+        "remote_model_path": "/home/jj/Large_Space_A/chiu/PW/ollama-qwen38/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "remote_blob_sha256": "f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "model_info_sha256": "9710a6b00da79d1450c9d6a603cfd8cf48c61c823baeecc84a13c9c80e11c086",
+        "metadata_only": true,
+        "tensor_count": 0,
+        "architecture_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "pretokenizer_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "source_manifest_sha256": "5f904d69530e991cf371dab754b285e1dbad4924d808271ec782da79d4f03fdb"
+      },
+      "measurement": {
+        "input_tokens": 384,
+        "context_length": 131072,
+        "output_reserve": 8192,
+        "available_input_tokens": 122880,
+        "rendered_prompt_sha256": "c24fa678bbfe7e1b101e574654fa957346f14b039c8f1109faf56a64b9af9c48",
+        "ollama_rendered_prompt_sha256": "c24fa678bbfe7e1b101e574654fa957346f14b039c8f1109faf56a64b9af9c48",
+        "appended_channel_header": ""
+      }
+    }
+  },
+  "descriptor_tokens": 88,
+  "stage": "node:c2a24a5a6684229b",
+  "records": {
+    "own_body": [],
+    "children": [
+      {
+        "node_id": "n_38ef7ca40ec3f9e296df197a",
+        "title": "Goods identification with RFID",
+        "summary": "The AGV detects RFID tags to identify the riser it is approaching. Upon reading, the tag data is verified and registered in the application, including the unique ID of the tag and the type of the riser.",
+        "content_type": [
+          "Technical Description"
+        ],
+        "question_intents": [
+          "How does the AGV identify goods using RFID?"
+        ],
+        "aliases": []
+      }
+    ]
+  },
+  "support_policy": "selected-block-ids-exact-full-block-v1",
+  "title_policy": "program-owned-fixed-model-names-new-v1"
+}

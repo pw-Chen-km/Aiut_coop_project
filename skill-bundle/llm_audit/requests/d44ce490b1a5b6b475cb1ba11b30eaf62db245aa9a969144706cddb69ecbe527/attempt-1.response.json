@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:15:28.286355198Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Description\"\n  ],\n  \"question_intents\": [\n    \"How is the AGV HMI interface accessed and used?\"\n  ],\n  \"summary\": \"The HMI control for the AMR Formica is accessible via a built-in touch-screen or a remote mobile application, with both methods offering similar functionalities that differ primarily in menu access and manual control methods. The touch-screen interface specifically features main menu tabs, AGV serial number display, and joystick and brake controls within the Manual tab.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4649415956,
+  "load_duration": 1847775,
+  "prompt_eval_count": 482,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 352085000,
+  "eval_count": 124,
+  "eval_duration": 4162667000
+}

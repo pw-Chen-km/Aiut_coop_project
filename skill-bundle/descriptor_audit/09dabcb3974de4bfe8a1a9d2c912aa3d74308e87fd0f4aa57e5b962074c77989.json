@@ -1,0 +1,153 @@
+{
+  "status": "complete",
+  "data": {
+    "aliases": [
+      "Qursor Interface Documentation"
+    ],
+    "content_type": [
+      "User Interface Documentation"
+    ],
+    "question_intents": [
+      "How to operate and configure Qursor AGV interfaces and traffic zones"
+    ],
+    "summary": "This collection of user guides covers the operation and configuration of Qursor's various human-machine interfaces, including the AGV HMI, MAP dashboard, and Tablet Application. It details workflows for managing AGV modes, executing tasks, configuring Kanbans, and setting up traffic zones for vehicle control.",
+    "title": "Corpus navigation"
+  },
+  "response": {
+    "data": {
+      "aliases": [
+        "Qursor Interface Documentation"
+      ],
+      "content_type": [
+        "User Interface Documentation"
+      ],
+      "question_intents": [
+        "How to operate and configure Qursor AGV interfaces and traffic zones"
+      ],
+      "summary": "This collection of user guides covers the operation and configuration of Qursor's various human-machine interfaces, including the AGV HMI, MAP dashboard, and Tablet Application. It details workflows for managing AGV modes, executing tasks, configuring Kanbans, and setting up traffic zones for vehicle control."
+    },
+    "model": "qwen3.8:27b-q4_K_M",
+    "usage": {
+      "prompt_tokens": 1048,
+      "completion_tokens": 131,
+      "total_tokens": 1179
+    },
+    "elapsed_seconds": 8.78200000000652,
+    "raw_content": "{\n  \"aliases\": [\n    \"Qursor Interface Documentation\"\n  ],\n  \"content_type\": [\n    \"User Interface Documentation\"\n  ],\n  \"question_intents\": [\n    \"How to operate and configure Qursor AGV interfaces and traffic zones\"\n  ],\n  \"summary\": \"This collection of user guides covers the operation and configuration of Qursor's various human-machine interfaces, including the AGV HMI, MAP dashboard, and Tablet Application. It details workflows for managing AGV modes, executing tasks, configuring Kanbans, and setting up traffic zones for vehicle control.\"\n}",
+    "cached": false,
+    "thinking_content": "",
+    "provenance": {
+      "stage": "node:81200a01b4314099",
+      "attempts": 1,
+      "prompt_sha256": "1501f177e3b3032129478d7e302d640c4aab8f5f6651a90d7bc3be6883a2e363",
+      "model_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "audit_dir": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\artifacts\\comparison\\qursor-jj-qwen27b-qwenembed-v3\\source\\llm_audit\\requests\\1501f177e3b3032129478d7e302d640c4aab8f5f6651a90d7bc3be6883a2e363",
+      "tokenizer": {
+        "implementation": "llama.cpp",
+        "build": "10091",
+        "version": "version: 10091 (b4d6c7d8f)\r\nbuilt with Clang 20.1.8 for Windows x86_64",
+        "executable_sha256": "9b8cdf312884a25e16d876421f354282b42fe15ee9d9080f95e00249405a84d1",
+        "gguf_path": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\.tools\\jj-qwen27b\\tokenizer.gguf",
+        "gguf_sha256": "61fb287d6c5914300ba710334bb591ae41238147b52506d0fd58ce76b0248f48",
+        "add_special": true,
+        "parse_special": true,
+        "remote_model_path": "/home/jj/Large_Space_A/chiu/PW/ollama-qwen38/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "remote_blob_sha256": "f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "model_info_sha256": "9710a6b00da79d1450c9d6a603cfd8cf48c61c823baeecc84a13c9c80e11c086",
+        "metadata_only": true,
+        "tensor_count": 0,
+        "architecture_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "pretokenizer_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "source_manifest_sha256": "5f904d69530e991cf371dab754b285e1dbad4924d808271ec782da79d4f03fdb"
+      },
+      "measurement": {
+        "input_tokens": 1048,
+        "context_length": 131072,
+        "output_reserve": 8192,
+        "available_input_tokens": 122880,
+        "rendered_prompt_sha256": "44d6bcd17be60a11df28744918217f761c45a869a7151597988966570899385a",
+        "ollama_rendered_prompt_sha256": "44d6bcd17be60a11df28744918217f761c45a869a7151597988966570899385a",
+        "appended_channel_header": ""
+      }
+    }
+  },
+  "descriptor_tokens": 109,
+  "stage": "node:81200a01b4314099",
+  "records": {
+    "own_body": [],
+    "children": [
+      {
+        "node_id": "n_5e4cd5aecbcf7b067e4523f0",
+        "title": "Qursor-AGV-HMI-userguide-20221209",
+        "summary": "This user guide details the Qursor AGV HMI application, covering access methods via web or touch-screen and the management of operation modes such as Automatic, Manual, and Setup. It provides instructions for manual vehicle control, monitoring safety scanners and battery status, and managing faults, network connectivity, and RFID identification features.",
+        "content_type": [
+          "User Interface Documentation"
+        ],
+        "question_intents": [
+          "How to operate and monitor the Qursor AGV via the HMI interface"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_99dab3fc3b62ae80871d4bef",
+        "title": "Qursor-MAP-userguide-General-20221107",
+        "summary": "This user guide provides comprehensive instructions for the Qursor MAP application, covering initial login, application settings, and the main dashboard interface for managing locations, maps, and AGVs. It details workflows for task execution, AGV diagnostics, station management, and the handling of diagnostic messages and user-reported issues.",
+        "content_type": [
+          "User Manual"
+        ],
+        "question_intents": [
+          "How to operate the Qursor MAP interface"
+        ],
+        "aliases": [
+          "Qursor MAP User Guide"
+        ]
+      },
+      {
+        "node_id": "n_053d5d5664654ddfb93f1966",
+        "title": "Qursor-MAP-userguide-Kanbans-20250121",
+        "summary": "This user guide provides comprehensive instructions for the Qursor M.A.P. interface, covering initial login, application settings, and the main dashboard for monitoring AGVs, stations, and tasks. It details operational workflows for task execution, AGV diagnostics, and issue management, with a significant focus on the definition, configuration, execution, and production application of Kanbans.",
+        "content_type": [
+          "User Guide"
+        ],
+        "question_intents": [
+          "How to use Qursor M.A.P. for AGV management and Kanban configuration"
+        ],
+        "aliases": [
+          "Qursor M.A.P. User Guide"
+        ]
+      },
+      {
+        "node_id": "n_42aa2a5c4c8ef61b6834e398",
+        "title": "Qursor-Tablet-Application-EN",
+        "summary": "The Qursor Tablet Application documentation provides a comprehensive guide covering the user interface, operational tutorials for triggering tasks and Kanbans, and system configuration settings. It includes administrative details, interface navigation instructions, and specific setup procedures for global settings and SSO integration.",
+        "content_type": [
+          "documentation"
+        ],
+        "question_intents": [
+          "How to use and configure the Qursor Tablet Application"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_0636b09d6201fe5cae08380d",
+        "title": "Traffic-zones-configuration-1.2",
+        "summary": "This user manual documents the configuration of the Qursor platform's Hector connector, detailing the definition and management of 2D polygon zones for AGV traffic control. It explains the operational logic of traffic light zones for signal activation and lock zones for separating AGV and unmanaged vehicle areas, including procedures for manual overrides. The guide further covers the administrative setup of these zones using the configurator and their integration with Navithor maps via JSON mapping.",
+        "content_type": [
+          "technical_documentation"
+        ],
+        "question_intents": [
+          "How are traffic light and lock zones configured and managed in the Qursor platform?"
+        ],
+        "aliases": []
+      }
+    ]
+  },
+  "support_policy": "selected-block-ids-exact-full-block-v1",
+  "title_policy": "program-owned-fixed-model-names-new-v1"
+}

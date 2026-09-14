@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:16:23.308425929Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Technical Description\"\n  ],\n  \"question_intents\": [\n    \"How does the AGV identify goods using RFID?\"\n  ],\n  \"summary\": \"This section describes the use of RFID technology for goods identification, specifically detailing how an AGV detects and verifies RFID tags to identify risers. It covers the process of reading tag data and registering unique identifiers and riser types within the application.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4032016777,
+  "load_duration": 2118964,
+  "prompt_eval_count": 384,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 341155000,
+  "eval_count": 104,
+  "eval_duration": 3479590000
+}

@@ -1,0 +1,93 @@
+{
+  "payload": {
+    "model": "qwen3.8:27b-q4_K_M",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return the JSON requested by the user."
+      },
+      {
+        "role": "user",
+        "content": "Return exactly {\"ok\":true}. Unicode test: 安裝 Linux."
+      },
+      {
+        "role": "user",
+        "content": "Return only complete JSON matching this schema:\n{\"additionalProperties\":false,\"properties\":{\"ok\":{\"type\":\"boolean\"}},\"required\":[\"ok\"],\"type\":\"object\"}"
+      }
+    ],
+    "format": {
+      "type": "object",
+      "properties": {
+        "ok": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ok"
+      ],
+      "additionalProperties": false
+    },
+    "stream": false,
+    "think": false,
+    "truncate": false,
+    "shift": false,
+    "keep_alive": "30m",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 131072,
+      "num_predict": 64
+    }
+  },
+  "endpoint": "/api/chat",
+  "render_payload": {
+    "model": "qwen3.8:27b-q4_K_M",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return the JSON requested by the user."
+      },
+      {
+        "role": "user",
+        "content": "Return exactly {\"ok\":true}. Unicode test: 安裝 Linux."
+      },
+      {
+        "role": "user",
+        "content": "Return only complete JSON matching this schema:\n{\"additionalProperties\":false,\"properties\":{\"ok\":{\"type\":\"boolean\"}},\"required\":[\"ok\"],\"type\":\"object\"}"
+      }
+    ],
+    "format": {
+      "type": "object",
+      "properties": {
+        "ok": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ok"
+      ],
+      "additionalProperties": false
+    },
+    "stream": false,
+    "think": false,
+    "truncate": false,
+    "shift": false,
+    "keep_alive": "30m",
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 131072,
+      "num_predict": 64
+    }
+  },
+  "measurement": {
+    "input_tokens": 76,
+    "context_length": 131072,
+    "output_reserve": 64,
+    "available_input_tokens": 131008,
+    "rendered_prompt_sha256": "1a840c10fa3480baa4860b10a79faa2bb85b57333eed158719d249e8b4bf5645",
+    "ollama_rendered_prompt_sha256": "1a840c10fa3480baa4860b10a79faa2bb85b57333eed158719d249e8b4bf5645",
+    "appended_channel_header": ""
+  },
+  "rendered_prompt": "<|im_start|>system\nReturn the JSON requested by the user.<|im_end|>\n<|im_start|>user\nReturn exactly {\"ok\":true}. Unicode test: 安裝 Linux.<|im_end|>\n<|im_start|>user\nReturn only complete JSON matching this schema:\n{\"additionalProperties\":false,\"properties\":{\"ok\":{\"type\":\"boolean\"}},\"required\":[\"ok\"],\"type\":\"object\"}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+}

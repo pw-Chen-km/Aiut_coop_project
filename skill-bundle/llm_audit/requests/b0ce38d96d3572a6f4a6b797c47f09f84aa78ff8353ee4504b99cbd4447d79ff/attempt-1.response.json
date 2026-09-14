@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:17:48.383128907Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Documentation\"\n  ],\n  \"question_intents\": [\n    \"What is a task?\"\n  ],\n  \"summary\": \"This section defines tasks as AGV operations triggered at stations and outlines the interface for managing them. It details the functionality for viewing and removing currently executed tasks, as well as the specific data fields available for archived task records.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3819849455,
+  "load_duration": 1918554,
+  "prompt_eval_count": 592,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 435604000,
+  "eval_count": 94,
+  "eval_duration": 3142291000
+}

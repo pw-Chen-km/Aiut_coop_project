@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:19:51.435296525Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"procedural\"\n  ],\n  \"question_intents\": [\n    \"How are AGV/AMR vehicle reservations prioritized for Kanban execution?\"\n  ],\n  \"summary\": \"This section details the prioritization logic for AGV/AMR vehicle reservations during Kanban step execution. It explains how the reservation queue is ordered based on priority settings, time to empty, addition order, and manual adjustments, with reservations attempted sequentially from the top of the queue.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4544074446,
+  "load_duration": 1863262,
+  "prompt_eval_count": 425,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 361019000,
+  "eval_count": 119,
+  "eval_duration": 3956836000
+}

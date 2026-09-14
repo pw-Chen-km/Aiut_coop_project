@@ -1,0 +1,62 @@
+{
+  "data": {
+    "aliases": [],
+    "content_type": [
+      "Reference"
+    ],
+    "question_intents": [
+      "What are the AGV operation modes and how to switch between them?"
+    ],
+    "summary": "This section defines the three AGV operation modes—Automatic, Manual, and Setup—and explains how to switch between them using the main panel switch. It also details the procedure for enabling manual or setup control, including the requirement for a single operator and the specific actions available via the HMI interface."
+  },
+  "model": "qwen3.8:27b-q4_K_M",
+  "usage": {
+    "prompt_tokens": 617,
+    "completion_tokens": 118,
+    "total_tokens": 735
+  },
+  "elapsed_seconds": 8.093999999997322,
+  "raw_content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Reference\"\n  ],\n  \"question_intents\": [\n    \"What are the AGV operation modes and how to switch between them?\"\n  ],\n  \"summary\": \"This section defines the three AGV operation modes—Automatic, Manual, and Setup—and explains how to switch between them using the main panel switch. It also details the procedure for enabling manual or setup control, including the requirement for a single operator and the specific actions available via the HMI interface.\"\n}",
+  "cached": false,
+  "thinking_content": "",
+  "provenance": {
+    "stage": "node:2e524ae62d9dbad7",
+    "attempts": 1,
+    "prompt_sha256": "3a7f4551c97625d798e06219f4aad11b45977ada4fb15b85dc4dd7ae4b71e4ad",
+    "model_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "audit_dir": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\artifacts\\comparison\\qursor-jj-qwen27b-qwenembed-v3\\source\\llm_audit\\requests\\3a7f4551c97625d798e06219f4aad11b45977ada4fb15b85dc4dd7ae4b71e4ad",
+    "tokenizer": {
+      "implementation": "llama.cpp",
+      "build": "10091",
+      "version": "version: 10091 (b4d6c7d8f)\r\nbuilt with Clang 20.1.8 for Windows x86_64",
+      "executable_sha256": "9b8cdf312884a25e16d876421f354282b42fe15ee9d9080f95e00249405a84d1",
+      "gguf_path": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\.tools\\jj-qwen27b\\tokenizer.gguf",
+      "gguf_sha256": "61fb287d6c5914300ba710334bb591ae41238147b52506d0fd58ce76b0248f48",
+      "add_special": true,
+      "parse_special": true,
+      "remote_model_path": "/home/jj/Large_Space_A/chiu/PW/ollama-qwen38/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+      "remote_blob_sha256": "f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+      "model_info_sha256": "9710a6b00da79d1450c9d6a603cfd8cf48c61c823baeecc84a13c9c80e11c086",
+      "metadata_only": true,
+      "tensor_count": 0,
+      "architecture_mapping": {
+        "source": "qwen35",
+        "target": "qwen35"
+      },
+      "pretokenizer_mapping": {
+        "source": "qwen35",
+        "target": "qwen35"
+      },
+      "source_manifest_sha256": "5f904d69530e991cf371dab754b285e1dbad4924d808271ec782da79d4f03fdb"
+    },
+    "measurement": {
+      "input_tokens": 617,
+      "context_length": 131072,
+      "output_reserve": 8192,
+      "available_input_tokens": 122880,
+      "rendered_prompt_sha256": "d7e0ab8732de203156f1c6a0fb65129b3746aff7435fdc214b618101b5197f22",
+      "ollama_rendered_prompt_sha256": "d7e0ab8732de203156f1c6a0fb65129b3746aff7435fdc214b618101b5197f22",
+      "appended_channel_header": ""
+    }
+  }
+}

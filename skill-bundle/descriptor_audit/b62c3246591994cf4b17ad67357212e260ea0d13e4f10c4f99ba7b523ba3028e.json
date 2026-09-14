@@ -1,0 +1,179 @@
+{
+  "status": "complete",
+  "data": {
+    "aliases": [],
+    "content_type": [
+      "description"
+    ],
+    "question_intents": [
+      "How to navigate and operate the tablet application interface"
+    ],
+    "summary": "This section provides a comprehensive overview of the tablet application's user interface, covering the login process, main navigation bar, and specific operational views. It details the functionality of key menus including Kanbans management, Simple View monitoring, station selection, manual AGV control, and the Node-RED extension tab.",
+    "title": "USER INTERFACE"
+  },
+  "response": {
+    "data": {
+      "aliases": [],
+      "content_type": [
+        "description"
+      ],
+      "question_intents": [
+        "How to navigate and operate the tablet application interface"
+      ],
+      "summary": "This section provides a comprehensive overview of the tablet application's user interface, covering the login process, main navigation bar, and specific operational views. It details the functionality of key menus including Kanbans management, Simple View monitoring, station selection, manual AGV control, and the Node-RED extension tab."
+    },
+    "model": "qwen3.8:27b-q4_K_M",
+    "usage": {
+      "prompt_tokens": 1139,
+      "completion_tokens": 116,
+      "total_tokens": 1255
+    },
+    "elapsed_seconds": 8.40700000000652,
+    "raw_content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"description\"\n  ],\n  \"question_intents\": [\n    \"How to navigate and operate the tablet application interface\"\n  ],\n  \"summary\": \"This section provides a comprehensive overview of the tablet application's user interface, covering the login process, main navigation bar, and specific operational views. It details the functionality of key menus including Kanbans management, Simple View monitoring, station selection, manual AGV control, and the Node-RED extension tab.\"\n}",
+    "cached": false,
+    "thinking_content": "",
+    "provenance": {
+      "stage": "node:835bb9bf6eed01ec",
+      "attempts": 1,
+      "prompt_sha256": "ab4767b28b8870dfe3f5de8d1e8da7fa8d8e2f3176e40aa3cb4c097c0198d358",
+      "model_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "audit_dir": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\artifacts\\comparison\\qursor-jj-qwen27b-qwenembed-v3\\source\\llm_audit\\requests\\ab4767b28b8870dfe3f5de8d1e8da7fa8d8e2f3176e40aa3cb4c097c0198d358",
+      "tokenizer": {
+        "implementation": "llama.cpp",
+        "build": "10091",
+        "version": "version: 10091 (b4d6c7d8f)\r\nbuilt with Clang 20.1.8 for Windows x86_64",
+        "executable_sha256": "9b8cdf312884a25e16d876421f354282b42fe15ee9d9080f95e00249405a84d1",
+        "gguf_path": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\.tools\\jj-qwen27b\\tokenizer.gguf",
+        "gguf_sha256": "61fb287d6c5914300ba710334bb591ae41238147b52506d0fd58ce76b0248f48",
+        "add_special": true,
+        "parse_special": true,
+        "remote_model_path": "/home/jj/Large_Space_A/chiu/PW/ollama-qwen38/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "remote_blob_sha256": "f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "model_info_sha256": "9710a6b00da79d1450c9d6a603cfd8cf48c61c823baeecc84a13c9c80e11c086",
+        "metadata_only": true,
+        "tensor_count": 0,
+        "architecture_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "pretokenizer_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "source_manifest_sha256": "5f904d69530e991cf371dab754b285e1dbad4924d808271ec782da79d4f03fdb"
+      },
+      "measurement": {
+        "input_tokens": 1139,
+        "context_length": 131072,
+        "output_reserve": 8192,
+        "available_input_tokens": 122880,
+        "rendered_prompt_sha256": "3a5648dc2be8715e82bf56c026f9befd8a0cccba2bb51ee148490eba1f2606b0",
+        "ollama_rendered_prompt_sha256": "3a5648dc2be8715e82bf56c026f9befd8a0cccba2bb51ee148490eba1f2606b0",
+        "appended_channel_header": ""
+      }
+    }
+  },
+  "descriptor_tokens": 99,
+  "stage": "node:835bb9bf6eed01ec",
+  "records": {
+    "own_body": [
+      {
+        "title": "USER INTERFACE",
+        "summary": "The section describes the tablet application's UI and provides hyperlinks to detailed explanations and tutorials.",
+        "content_type": [
+          "description"
+        ],
+        "question_intents": [],
+        "aliases": []
+      }
+    ],
+    "children": [
+      {
+        "node_id": "n_911df95585dd9a3670727eef",
+        "title": "Login Page",
+        "summary": "This section details how to access the tablet application login page by constructing the correct server URL. It further explains the login process using Qursor or Azure AD credentials and describes the User Menu options for managing language, theme, and session.",
+        "content_type": [
+          "instruction"
+        ],
+        "question_intents": [
+          "How to access and log in to the tablet application"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_32d7775d5ef8c37a23ec568c",
+        "title": "Main Menu",
+        "summary": "The Main Menu section describes the tablet application's primary interface, which is accessible after login and features a top navigation bar. This bar includes an information panel displaying system details like plant name and timestamp, as well as a dropdown menu providing access to various operational views and user settings.",
+        "content_type": [
+          "Instructional"
+        ],
+        "question_intents": [
+          "How to access and use the main menu and navigation bar"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_33e85292bfd76ed855e99522",
+        "title": "Kanbans",
+        "summary": "The Kanbans menu provides a centralized interface for managing production Kanbans through dedicated tabs for filtering, viewing current status, and triggering execution. It includes specific controls for selecting Kanbans via groups or hashtags, monitoring running processes, and modifying their status or details.",
+        "content_type": [
+          "UI Description"
+        ],
+        "question_intents": [
+          "How to manage and trigger production Kanbans"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_5aa064125f98acd23e451191",
+        "title": "Simple View",
+        "summary": "Simple View is a minimal interface within the Qursor system that displays lock zones and station groups for quick monitoring. It presents the names, current states, and assigned tasks of stations within configured groups to facilitate easy reference.",
+        "content_type": [
+          "description"
+        ],
+        "question_intents": [
+          "What is Simple View?"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_25d385d2084244466af01dc1",
+        "title": "Stations Choice Menu",
+        "summary": "The Stations Choice Menu provides an overview of all stations within a plant project, accessible via the navigation bar. It includes tabs for searching and selecting specific stations, monitoring and controlling station statuses, and viewing current or historical task logs.",
+        "content_type": [
+          "navigation"
+        ],
+        "question_intents": [
+          "How to manage and monitor stations"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_d1db741284946631af1c1245",
+        "title": "Manual control menu",
+        "summary": "The manual control menu allows users to add physical AGVs by scanning a QR code via a tablet application, with the specific QR code located in the qursor Configurator application under the AGVs tab.",
+        "content_type": [
+          "instruction"
+        ],
+        "question_intents": [
+          "How to add a physical AGV using the manual control menu?"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_4729bb842358030eb70f21d1",
+        "title": "Nodered UI Tab",
+        "summary": "The Nodered UI tab in the tablet app provides access to additional Node-RED-based features, allowing system expansion without modifying the main app. Access depends on permissions configured in qursor-configurator-application, and the interface can display data such as PLC signal status.",
+        "content_type": [
+          "Documentation"
+        ],
+        "question_intents": [
+          "What is the Nodered UI tab?"
+        ],
+        "aliases": []
+      }
+    ]
+  },
+  "support_policy": "selected-block-ids-exact-full-block-v1",
+  "title_policy": "program-owned-fixed-model-names-new-v1"
+}

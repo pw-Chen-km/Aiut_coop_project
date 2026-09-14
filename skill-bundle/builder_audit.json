@@ -1,0 +1,1486 @@
+{
+  "schema_version": "comparison-builder-audit-v1",
+  "strategy": "source",
+  "status": "complete",
+  "source_only": true,
+  "grouping": [],
+  "descriptions": [
+    {
+      "title": "AGV - HMI Interface",
+      "own_unit_ids": [
+        "sec_a426b1ad88dd8983fa3a14ff"
+      ],
+      "children": [
+        "n_7b2529587e125aa89fe72db7",
+        "n_6b8ca0e782782b0b267a2c39"
+      ],
+      "output": {
+        "summary": "The HMI control for the AMR Formica is accessible via a built-in touch-screen or a remote mobile application, with both methods offering similar functionalities that differ primarily in menu access and manual control methods. The touch-screen interface specifically features main menu tabs, AGV serial number display, and joystick and brake controls within the Manual tab.",
+        "content_type": [
+          "Description"
+        ],
+        "question_intents": [
+          "How is the AGV HMI interface accessed and used?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Operation modes",
+      "own_unit_ids": [],
+      "children": [
+        "n_71e4d584d45e3850d2f9c44f",
+        "n_8d77fc58007dff3dab749ab2",
+        "n_0499bdd5732c1f6cd30c703a"
+      ],
+      "output": {
+        "summary": "This section defines the three AGV operation modes—Automatic, Manual, and Setup—and explains how to switch between them using the main panel switch. It also details the procedure for enabling manual or setup control, including the requirement for a single operator and the specific actions available via the HMI interface.",
+        "content_type": [
+          "Reference"
+        ],
+        "question_intents": [
+          "What are the AGV operation modes and how to switch between them?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Convenient overview and management of current and archive faults",
+      "own_unit_ids": [],
+      "children": [
+        "n_65425aec00b799c2b26b65e1"
+      ],
+      "output": {
+        "summary": "This section provides the procedure for clearing current faults on an AGV, requiring the device to be in manual or setup mode. It instructs the user to verify and remove the fault source, then press the Clear faults button to move the faults to the Historic faults tab, where they are stored for 8 hours.",
+        "content_type": [
+          "procedural"
+        ],
+        "question_intents": [
+          "How to clear faults"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Fault list",
+      "own_unit_ids": [],
+      "children": [
+        "n_203659848e1b9fcd804cf8b1"
+      ],
+      "output": {
+        "summary": "The Fault list section provides a convenient overview and management interface for both current and archived faults on an AGV. It outlines the procedure for clearing active faults by verifying the source and using the Clear faults button, which moves them to the Historic faults tab for an 8-hour retention period.",
+        "content_type": [
+          "procedural"
+        ],
+        "question_intents": [
+          "How to clear faults"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Manual control",
+      "own_unit_ids": [],
+      "children": [
+        "n_08a7c2b83658b297c109de5d"
+      ],
+      "output": {
+        "summary": "This section explains how to manually control an AGV using the HMI application. It covers raising and lowering pins and plates, as well as steering the vehicle with a joystick in Manual or Setup modes.",
+        "content_type": [
+          "Instruction"
+        ],
+        "question_intents": [
+          "How to steer the AGV with the application?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Network",
+      "own_unit_ids": [],
+      "children": [
+        "n_6f71669f0c0e143366420724"
+      ],
+      "output": {
+        "summary": "The Network section provides an interface for monitoring the AGV's connectivity to the Qursor network. It displays detailed status information, including WiFi specifics and signal quality.",
+        "content_type": [
+          "UI Description"
+        ],
+        "question_intents": [
+          "Check AGV network connection status"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "RFID",
+      "own_unit_ids": [],
+      "children": [
+        "n_38ef7ca40ec3f9e296df197a"
+      ],
+      "output": {
+        "summary": "This section describes the use of RFID technology for goods identification, specifically detailing how an AGV detects and verifies RFID tags to identify risers. It covers the process of reading tag data and registering unique identifiers and riser types within the application.",
+        "content_type": [
+          "Technical Description"
+        ],
+        "question_intents": [
+          "How does the AGV identify goods using RFID?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Scanners",
+      "own_unit_ids": [],
+      "children": [
+        "n_9823208b37ca050ca35592a4"
+      ],
+      "output": {
+        "summary": "This section details non-contact safety sensors used for collision avoidance in AGVs, specifically describing ultrasonic scanners that assist in environmental localization and distance calculation. It outlines the operational logic of these sensors, which utilize a yellow warning zone to trigger safe speed reduction and a red emergency zone to initiate an immediate stop, thereby protecting personnel and preventing mechanical damage.",
+        "content_type": [
+          "Technical Description"
+        ],
+        "question_intents": [
+          "How do non-contact safety sensors function for collision avoidance?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Camera 3D photos",
+      "own_unit_ids": [],
+      "children": [
+        "n_4dacb6e2d5d7e9b5b3c5662e"
+      ],
+      "output": {
+        "summary": "This section explains how to view 3D snapshots captured by safety sensors when obstacles are detected in warning or emergency zones. It also details the process for filtering these snapshots by time.",
+        "content_type": [
+          "instruction"
+        ],
+        "question_intents": [
+          "How to view and filter 3D snapshots"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Battery data",
+      "own_unit_ids": [],
+      "children": [
+        "n_93db304abd47347c089a75e4"
+      ],
+      "output": {
+        "summary": "This section provides instructions for accessing detailed battery status information, including metrics such as individual cell voltage, total voltage, current consumption, and state of charge. It also includes guidance on entering full screen mode to view these data points.",
+        "content_type": [
+          "Instructional"
+        ],
+        "question_intents": [
+          "How to view battery status"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Qursor-AGV-HMI-userguide-20221209",
+      "own_unit_ids": [
+        "sec_a325f3c3a4633adddcfc687c"
+      ],
+      "children": [
+        "n_85c962234ce351a8d5a9f98a",
+        "n_ad664cc2371d51b2ccb6ab80",
+        "n_ccf3207344ba0f55500f7719",
+        "n_931c2b7751b6b4908d664692",
+        "n_3bccabc8225ad80406bdd26c",
+        "n_2fa087f5700d4c78c95c3145",
+        "n_c7d540bda819cc94c272e381",
+        "n_e4ae354cfe7e31ed453640cd",
+        "n_14f9cac7f33692d8c14e725e",
+        "n_6d23e83e10056f2998d3b40c",
+        "n_3f13efb4911ae2ab45e4499a",
+        "n_57bc80f490e8833017ec6033"
+      ],
+      "output": {
+        "summary": "This user guide details the Qursor AGV HMI application, covering access methods via web or touch-screen and the management of operation modes such as Automatic, Manual, and Setup. It provides instructions for manual vehicle control, monitoring safety scanners and battery status, and managing faults, network connectivity, and RFID identification features.",
+        "content_type": [
+          "User Interface Documentation"
+        ],
+        "question_intents": [
+          "How to operate and monitor the Qursor AGV via the HMI interface"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Qursor-AGV-HMI-userguide-20221209",
+      "own_unit_ids": [],
+      "children": [
+        "n_c844dba62f40646bc6672e00"
+      ],
+      "output": {
+        "summary": "This user guide details the Qursor AGV HMI application, covering access methods via web or touch-screen and the management of operation modes such as Automatic, Manual, and Setup. It provides instructions for manual vehicle control, monitoring safety scanners and battery status, and managing faults, network connectivity, and RFID identification features.",
+        "content_type": [
+          "User Interface Documentation"
+        ],
+        "question_intents": [
+          "How to operate and monitor the Qursor AGV via the HMI interface"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Application settings",
+      "own_unit_ids": [
+        "sec_7492f037a36ea80daded17c3"
+      ],
+      "children": [
+        "n_156b417da469aacc8552a2eb",
+        "n_9b39c2cbe3f62364c14b10ab",
+        "n_828ffa6b1be58f304894a933",
+        "n_7c8eb0aa9bd18adcaa7ce677"
+      ],
+      "output": {
+        "summary": "This section covers the Qursor Configurator interface, detailing how permission-based tabs are displayed and how to switch between automatic and autonomous system modes. It also provides instructions for managing user preferences, such as language and session controls, and checking the current application version.",
+        "content_type": [
+          "Description"
+        ],
+        "question_intents": [
+          "How to manage application settings and system modes"
+        ],
+        "aliases": [
+          "App configuration"
+        ]
+      }
+    },
+    {
+      "title": "Main dashboard - Locations",
+      "own_unit_ids": [
+        "sec_be046f978cf5944d44b85c41"
+      ],
+      "children": [
+        "n_d3a0adf67c353c5964826016"
+      ],
+      "output": {
+        "summary": "This section defines AGV locations as specific points for loading, unloading, or parking, including types such as chargers and wait points. It details the dashboard interface for managing these locations, covering actions like viewing assets, checking status indicators, and modifying settings such as adding conveyors or disabling stations.",
+        "content_type": [
+          "UI Documentation"
+        ],
+        "question_intents": [
+          "How to manage locations in the dashboard"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Task performance 1/3",
+      "own_unit_ids": [],
+      "children": [
+        "n_cd212b995bb473cc2d820f7a"
+      ],
+      "output": {
+        "summary": "This section outlines the procedure for executing tasks at stations configured in the Configurator application. It details the workflow of selecting a station in the Dashboard to trigger AGV calls and displaying the resulting task in the Tasks window for user selection.",
+        "content_type": [
+          "procedural_guide"
+        ],
+        "question_intents": [
+          "how_to_run_task"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Tasks overview",
+      "own_unit_ids": [
+        "sec_ff444dc47dd6b2c154b76540"
+      ],
+      "children": [
+        "n_86f53f53a0a19c4983c02557",
+        "n_11cc0f0bcd56cf673a85aca7"
+      ],
+      "output": {
+        "summary": "This section defines tasks as AGV operations triggered at stations and outlines the interface for managing them. It details the functionality for viewing and removing currently executed tasks, as well as the specific data fields available for archived task records.",
+        "content_type": [
+          "Documentation"
+        ],
+        "question_intents": [
+          "What is a task?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Stations overview - more data",
+      "own_unit_ids": [],
+      "children": [
+        "n_c70c1e9a785312732a73bb2a",
+        "n_3dec0d16c19bacc54cca0027",
+        "n_952bab5fd70d84e4f6ac5caf",
+        "n_b48cdfd86e59cbb6ce55f952",
+        "n_b4ee1f79610a3cd5a1e5b8be"
+      ],
+      "output": {
+        "summary": "This section details the status data and task types displayed in the Stations list, including how to switch between autonomous and automatic modes. It also explains how to access the list of finished tasks and view the details of the task currently executing at the station.",
+        "content_type": [
+          "description"
+        ],
+        "question_intents": [
+          "How to view executed tasks"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Diagnostic messages",
+      "own_unit_ids": [],
+      "children": [
+        "n_1cce2a3661c705068455c5e9"
+      ],
+      "output": {
+        "summary": "This section defines the structure of diagnostic messages, detailing the components sent from various modules. It specifies the use of module abbreviations such as QFM and OM, along with severity levels including Information, Error, and Warning.",
+        "content_type": [
+          "Reference"
+        ],
+        "question_intents": [
+          "What do the diagnostic message components mean?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Qursor-MAP-userguide-General-20221107",
+      "own_unit_ids": [
+        "sec_c99613247e5ee6b850ab933c"
+      ],
+      "children": [
+        "n_0eddefcee3d8307e8dc142e2",
+        "n_c083e31e095c8deb986aebdf",
+        "n_a728bbfbfb614b1ec54cdad8",
+        "n_ea3cdda40fb1a96954878e23",
+        "n_e1eeba39a899c887ff1575cd",
+        "n_26adb8fd61ea7b279e116f15",
+        "n_c86ef16fd29adb70b7a8c506",
+        "n_b75ebb242343fe3e2ee2cd61",
+        "n_ad3f3b1312877dc16138ef17",
+        "n_fc4c14998ff5af9c0b814ea0",
+        "n_bdda801bd22a4c7410e00403",
+        "n_05ec4c0602b2587f1f5def0d",
+        "n_906baf3a02d5fc5651ec2125",
+        "n_b2d3fdc36bf2ae0a3780e4bf",
+        "n_22ec24b125e651dadebc8435",
+        "n_5e7b916a2aad781724da2888"
+      ],
+      "output": {
+        "summary": "This user guide provides comprehensive instructions for the Qursor MAP application, covering initial login, application settings, and the main dashboard interface for managing locations, maps, and AGVs. It details workflows for task execution, AGV diagnostics, station management, and the handling of diagnostic messages and user-reported issues.",
+        "content_type": [
+          "User Manual"
+        ],
+        "question_intents": [
+          "How to operate the Qursor MAP interface"
+        ],
+        "aliases": [
+          "Qursor MAP User Guide"
+        ]
+      }
+    },
+    {
+      "title": "Qursor-MAP-userguide-General-20221107",
+      "own_unit_ids": [],
+      "children": [
+        "n_597d82fc6da5416accc2f97d"
+      ],
+      "output": {
+        "summary": "This user guide provides comprehensive instructions for the Qursor MAP application, covering initial login, application settings, and the main dashboard interface for managing locations, maps, and AGVs. It details workflows for task execution, AGV diagnostics, station management, and the handling of diagnostic messages and user-reported issues.",
+        "content_type": [
+          "User Manual"
+        ],
+        "question_intents": [
+          "How to operate the Qursor MAP interface"
+        ],
+        "aliases": [
+          "Qursor MAP User Guide"
+        ]
+      }
+    },
+    {
+      "title": "Application settings",
+      "own_unit_ids": [
+        "sec_c8c4bdb9a0c9ec7b9df24e69"
+      ],
+      "children": [
+        "n_551fbeb9cea92c8cf3b964db",
+        "n_0a4c0c321fe322413ba441f1",
+        "n_652b223305e1b2a0fff1edf4",
+        "n_db07396b51fda790acf5d64c"
+      ],
+      "output": {
+        "summary": "This section outlines the Qursor Configurator interface, detailing how to switch between automatic and autonomous system modes and access user-specific preferences such as language and session management. It also covers the application's core purpose of defining stations, tasks, and AGVs, along with instructions for verifying the current software version.",
+        "content_type": [
+          "description"
+        ],
+        "question_intents": [
+          "How to manage application settings and system modes"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Main dashboard - Locations",
+      "own_unit_ids": [
+        "sec_a46fb6844b672fb1526d6bb2"
+      ],
+      "children": [
+        "n_730ad0b0e03aa1130bf612c5"
+      ],
+      "output": {
+        "summary": "This section defines AGV locations as specific points for loading, unloading, or parking, including types such as chargers and wait points. It details the dashboard interface for managing these locations, covering actions like viewing assets, checking status indicators, and modifying settings such as adding conveyors or disabling stations.",
+        "content_type": [
+          "UI Documentation"
+        ],
+        "question_intents": [
+          "How to manage locations in the dashboard"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Task performance 1/3",
+      "own_unit_ids": [],
+      "children": [
+        "n_1abb236ad83246e739e12b0e"
+      ],
+      "output": {
+        "summary": "This section outlines the procedure for executing tasks at stations configured in the Configurator application. It details the workflow of selecting a station in the Dashboard to trigger an AGV call, reserve the station, and visualize the destination path on the map.",
+        "content_type": [
+          "procedural_guide"
+        ],
+        "question_intents": [
+          "how_to_run_task"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Tasks overview",
+      "own_unit_ids": [
+        "sec_7ebabb73138378ceca074ddf"
+      ],
+      "children": [
+        "n_375065c71afdc861860f8204",
+        "n_9017c6f469af6eaa3f0f8ad6"
+      ],
+      "output": {
+        "summary": "This section defines AGV tasks as station-triggered operations and outlines the interface for managing them, including viewing current and archived entries and removing in-progress tasks. It details the specific data fields associated with active and archived tasks, such as trigger time, destination, and final results, while distinguishing between the executable current view and the immutable archive.",
+        "content_type": [
+          "Documentation"
+        ],
+        "question_intents": [
+          "What is a task?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Stations overview",
+      "own_unit_ids": [
+        "sec_b909e235df49822f8f008aa8"
+      ],
+      "children": [
+        "n_6625bf34dc0c77e7ab42cc85"
+      ],
+      "output": {
+        "summary": "This section defines stations as sites for AGV loading, unloading, and parking, detailing their basic parameters such as ID, Map ID, Name, and Reserved status. It also describes the user interface elements that display the AGV load state, current task, and presence status at these stations.",
+        "content_type": [
+          "Reference"
+        ],
+        "question_intents": [
+          "What are the basic parameters and status indicators for AGV stations?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Stations overview - more data",
+      "own_unit_ids": [],
+      "children": [
+        "n_73fbabef8b2be6529bbea9b4",
+        "n_82cabf3daac61dfe3655b3e3",
+        "n_a2f459fb06fcee835699c705",
+        "n_4c749e173a7b491f02350b5c",
+        "n_7672e9844b84b7c2e89f3c13"
+      ],
+      "output": {
+        "summary": "This section details the status data and task types displayed in the Stations list, including how to switch between autonomous and automatic modes. It also explains how to access the list of finished tasks and view the details of the task currently executing at the station.",
+        "content_type": [
+          "description"
+        ],
+        "question_intents": [
+          "How to view executed tasks"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Diagnostic messages",
+      "own_unit_ids": [],
+      "children": [
+        "n_e8ee5b261ccc7472794afd89"
+      ],
+      "output": {
+        "summary": "This section defines diagnostic message components, including module abbreviations such as QFM and OM, and severity levels like Information, Error, and Warning.",
+        "content_type": [
+          "Reference"
+        ],
+        "question_intents": [
+          "What do the diagnostic message components mean?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Issues",
+      "own_unit_ids": [
+        "sec_0e313d99b2726ff9ef42ab6e"
+      ],
+      "children": [
+        "n_b421c7e30c370a40f43f96e1"
+      ],
+      "output": {
+        "summary": "The Issues section defines user-reported problems and details the interface for viewing, filtering, searching, and exporting them, including status indicators and actions for reporting, editing, or removing entries. It is accompanied by administrative version information for the Qursor M.A.P. User Guide.",
+        "content_type": [
+          "Documentation"
+        ],
+        "question_intents": [
+          "How to manage reported issues"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Kanban execution 2/2",
+      "own_unit_ids": [],
+      "children": [
+        "n_a429b97cd457cba91538c9e3"
+      ],
+      "output": {
+        "summary": "This section details the prioritization logic for AGV/AMR vehicle reservations during Kanban step execution. It explains how the reservation queue is ordered based on priority settings, time to empty, addition order, and manual adjustments, with reservations attempted sequentially from the top of the queue.",
+        "content_type": [
+          "procedural"
+        ],
+        "question_intents": [
+          "How are AGV/AMR vehicle reservations prioritized for Kanban execution?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Kanban configuration - options overview 1/2",
+      "own_unit_ids": [],
+      "children": [
+        "n_06edb0e40d40ada87c9a955b"
+      ],
+      "output": {
+        "summary": "This section outlines the initial steps for configuring Kanbans by accessing the Qursor Configurator application from within Qursor M.A.P. It details the specific navigation path required to open the Kanban options menu.",
+        "content_type": [
+          "procedural"
+        ],
+        "question_intents": [
+          "How to access Kanban configuration"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Kanban editing 2/2",
+      "own_unit_ids": [],
+      "children": [
+        "n_b38f2da4c05ead3ab9f7b9ff",
+        "n_72ece918befb15ebfb794604",
+        "n_02314730393c4e05f7c3c94c"
+      ],
+      "output": {
+        "summary": "This section details the configuration of Kanban relations to regulate workflow between steps and sequence jobs, as well as the setup of allowed dynamic stations for real-time station definition. It covers how to define specific stations that external systems can use to replace configured dynamic stations when triggering a Kanban.",
+        "content_type": [
+          "Configuration Reference"
+        ],
+        "question_intents": [
+          "How to configure Kanban settings, relations, and dynamic stations"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Kanban steps",
+      "own_unit_ids": [
+        "sec_26360e09fc1b1fa9307e49d4"
+      ],
+      "children": [
+        "n_d607316a7c106d9f563630c8",
+        "n_f100dc14d0528b5ec60ba418"
+      ],
+      "output": {
+        "summary": "This section outlines the procedures for adding, configuring, reordering, and removing steps in a Kanban board, including the definition of basic configuration fields such as Name, Symbol, Priority, and Hashtags. It also details the management of station reservations for AGVs, covering the addition, selection, prioritization, and removal of stations to determine vehicle requirements.",
+        "content_type": [
+          "Instructional"
+        ],
+        "question_intents": [
+          "How to manage Kanban steps and station reservations"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Trigger",
+      "own_unit_ids": [
+        "sec_8ea31bb46b0f300bdfec8f4c"
+      ],
+      "children": [
+        "n_aada9b7f29534687df4e9129"
+      ],
+      "output": {
+        "summary": "The Trigger section defines configurable job parameters such as station, destination, AGV type, and execution conditions. It also specifies four distinct condition types—Station status, Station items, Dynamic station, and Custom parameter—that must be selected from drop-down or defined lists.",
+        "content_type": [
+          "Configuration Reference"
+        ],
+        "question_intents": [
+          "What parameters and conditions are configured in the Trigger section?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Sequence configuration 2/2",
+      "own_unit_ids": [
+        "sec_9b672f3796eee833dddd492c"
+      ],
+      "children": [
+        "n_0ad512419b8c581926e62100",
+        "n_ec150ed80d6111bb5c2d9d1e"
+      ],
+      "output": {
+        "summary": "This section guides users on editing sequence jobs by selecting a job and entering new parameters in the Edit sequence job window. It details the configuration of the next job, including conditional triggers for when conditions are met or not met. Additionally, it defines specific trigger parameters such as station, destination, AGV type, and execution conditions based on station status, items, dynamic stations, or custom parameters.",
+        "content_type": [
+          "instruction"
+        ],
+        "question_intents": [
+          "How to edit and configure sequence job parameters and triggers"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Import",
+      "own_unit_ids": [
+        "sec_97ca6449ce8a092f3a1d32b0"
+      ],
+      "children": [
+        "n_a9a160bbe9886c2ca9fb6ab9",
+        "n_56c882bf689b2fbdf338f12c"
+      ],
+      "output": {
+        "summary": "The Import section defines the data fields required for Kanban ingestion, such as file name, Kanban ID, and version number. It also outlines the available import actions, including adding new versions or Kanbans, and explains how default behaviors are determined based on existing system data.",
+        "content_type": [
+          "Field Definitions"
+        ],
+        "question_intents": [
+          "What fields and actions are involved in the Kanban import process?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Import/Export",
+      "own_unit_ids": [],
+      "children": [
+        "n_7785c533b01e96856a156d56",
+        "n_967e47b81ddbdf35eae4d9b5"
+      ],
+      "output": {
+        "summary": "This section covers the procedures for exporting Kanbans as .zip files and the requirements for importing them, including necessary data fields and available actions. It details how to select items and versions for export, as well as the specific inputs and default behaviors involved in the ingestion process.",
+        "content_type": [
+          "instructions"
+        ],
+        "question_intents": [
+          "How to import and export Kanbans"
+        ],
+        "aliases": [
+          "Kanban Data Transfer"
+        ]
+      }
+    },
+    {
+      "title": "Qursor-MAP-userguide-Kanbans-20250121",
+      "own_unit_ids": [
+        "sec_d30a4d27b3204263543e5127"
+      ],
+      "children": [
+        "n_5efdab0844a7b4124a2ac028",
+        "n_81e57ecf2f0afbffc587b2b2",
+        "n_d6a21616641921a92711d896",
+        "n_4893f402d5dd1a7bffe09bbc",
+        "n_7667a436070281a7c7919684",
+        "n_e4dd86545d07aabd0b7126a8",
+        "n_9803bc1dc40a7f3d3f5fe633",
+        "n_69a5c70ec1b7028efe029acc",
+        "n_ab20276207cd4831fb75b9d2",
+        "n_447e1d4f88ed44ffff2cbfb6",
+        "n_f4f0efb9353e3efd003078e8",
+        "n_d15e16c206e8b6ff7a4ea849",
+        "n_16c9ef8d9217c6840e99e78a",
+        "n_8b33aaae099b66966c91cade",
+        "n_ff48e981df0c457fd7318e0b",
+        "n_06d52deae093e151367c3da7",
+        "n_66f294b90e54edefe4e3d1fa",
+        "n_b6e253da6059fe229fa3c12c",
+        "n_ee92a0e810727f4a2af53941",
+        "n_65c36cb6d4621a50fda97843",
+        "n_a2d2e3d5ca86eff3618e2963",
+        "n_83c4a82307432c148c86cc5f",
+        "n_1777ee7409cff7a05431f83b",
+        "n_dffc02aea8c54ddbfc5e984e",
+        "n_bcdeffa9af0ded4ad9052b89",
+        "n_d170956078dcc3a69b89db4b",
+        "n_a2cbf66f4d97ce230be3bc8e",
+        "n_93f9f900e27049e101be935e",
+        "n_631dd76e59b3dede8485ba36",
+        "n_289fb690557d8d2f38826c13",
+        "n_c4c72b1b552f28c563f58729",
+        "n_4bb82c4495ede8f744982b6c",
+        "n_186f2ec1dbfffb1330f9639b",
+        "n_c27ee75e540c116028ea1706",
+        "n_7b9c77009d36ab830c846565",
+        "n_6caaafe4fe4aa11a71f3e883",
+        "n_a0c3a41196644da72439be27",
+        "n_0db6fdaad61be6f9cb29ca79"
+      ],
+      "output": {
+        "summary": "This user guide provides comprehensive instructions for the Qursor M.A.P. interface, covering initial login, application settings, and the main dashboard for monitoring AGVs, stations, and tasks. It details operational workflows for task execution, AGV diagnostics, and issue management, with a significant focus on the definition, configuration, execution, and production application of Kanbans.",
+        "content_type": [
+          "User Guide"
+        ],
+        "question_intents": [
+          "How to use Qursor M.A.P. for AGV management and Kanban configuration"
+        ],
+        "aliases": [
+          "Qursor M.A.P. User Guide"
+        ]
+      }
+    },
+    {
+      "title": "Qursor-MAP-userguide-Kanbans-20250121",
+      "own_unit_ids": [],
+      "children": [
+        "n_2bafcafa461e63e94d44edf2"
+      ],
+      "output": {
+        "summary": "This user guide provides comprehensive instructions for the Qursor M.A.P. interface, covering initial login, application settings, and the main dashboard for monitoring AGVs, stations, and tasks. It details operational workflows for task execution, AGV diagnostics, and issue management, with a significant focus on the definition, configuration, execution, and production application of Kanbans.",
+        "content_type": [
+          "User Guide"
+        ],
+        "question_intents": [
+          "How to use Qursor M.A.P. for AGV management and Kanban configuration"
+        ],
+        "aliases": [
+          "Qursor M.A.P. User Guide"
+        ]
+      }
+    },
+    {
+      "title": "User Manual Qursor Tablet Application",
+      "own_unit_ids": [
+        "sec_a0f56b9affa273f640db52c0"
+      ],
+      "children": [
+        "n_5f366c184777e2daaece3aad"
+      ],
+      "output": {
+        "summary": "The User Manual for the Qursor Tablet Application provides administrative details, specifically noting the issue date of January 5, 2026.",
+        "content_type": [
+          "administrative information"
+        ],
+        "question_intents": [],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Login Page",
+      "own_unit_ids": [
+        "sec_ec944a05aa31d5cc776b4a86"
+      ],
+      "children": [
+        "n_cd627b0e1e9784a0c74a1c75",
+        "n_86559fc24e4cf4265877afb8"
+      ],
+      "output": {
+        "summary": "This section details how to access the tablet application login page by constructing the correct server URL. It further explains the login process using Qursor or Azure AD credentials and describes the User Menu options for managing language, theme, and session.",
+        "content_type": [
+          "instruction"
+        ],
+        "question_intents": [
+          "How to access and log in to the tablet application"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Main Menu",
+      "own_unit_ids": [
+        "sec_77327fd91a7159f76b9cfe8d"
+      ],
+      "children": [
+        "n_78777e7e13533da8e4e8b8e6",
+        "n_ca9d085842e2b06e882efbc5",
+        "n_fa355f0ca4693fceccce9790"
+      ],
+      "output": {
+        "summary": "The Main Menu section describes the tablet application's primary interface, which is accessible after login and features a top navigation bar. This bar includes an information panel displaying system details like plant name and timestamp, as well as a dropdown menu providing access to various operational views and user settings.",
+        "content_type": [
+          "Instructional"
+        ],
+        "question_intents": [
+          "How to access and use the main menu and navigation bar"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "The eye button",
+      "own_unit_ids": [
+        "sec_1b169cc8da2ad384ce5ed516"
+      ],
+      "children": [
+        "n_f549efebf4123b007eebb669"
+      ],
+      "output": {
+        "summary": "The eye button allows users to view detailed information about the currently running kanban step. Clicking the icon reveals specific data points such as kanban steps, priority, assigned AGVs, checkpoints, station addresses, and time to empty.",
+        "content_type": [
+          "instruction"
+        ],
+        "question_intents": [
+          "What is the function of the eye button and what details does it display?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Current tab",
+      "own_unit_ids": [
+        "sec_b5c566c5ba5529f5744b9e62"
+      ],
+      "children": [
+        "n_3179d82c36e7af34a8844218",
+        "n_4df412400e2be5d157226f08"
+      ],
+      "output": {
+        "summary": "The 'Current tab' interface displays currently running Kanbans and provides controls for managing them. Users can click the eye icon to view detailed step information or the cog icon to access settings for modifying status, removing, or advancing the Kanban.",
+        "content_type": [
+          "Instructional"
+        ],
+        "question_intents": [
+          "How to view or edit Kanban details"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Triggering Kanbans",
+      "own_unit_ids": [
+        "sec_e5c5d0aebc84f179aa19f961"
+      ],
+      "children": [
+        "n_51b3d82b7c4b0a85895fae24",
+        "n_465f2abf8ca82a3a9ed20d0c"
+      ],
+      "output": {
+        "summary": "This section explains how to trigger Kanbans by selecting them from the Trigger menu, detailing the available configuration fields such as step selection and dynamic station addresses. It also describes the use of Groups as a filtering tool that allows users to assign hashtags to Kanbans for easier retrieval and management within the Tablet Application.",
+        "content_type": [
+          "instruction"
+        ],
+        "question_intents": [
+          "How to trigger Kanbans"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Trigger tab",
+      "own_unit_ids": [
+        "sec_285adcfd372be3d4f3ac1da5"
+      ],
+      "children": [
+        "n_d1aa26b243c29e7d47ef6da4",
+        "n_1744a711d17fc97aa9537612",
+        "n_c180c6bbed0a96a26978c5f6"
+      ],
+      "output": {
+        "summary": "The Trigger tab displays a scrollable list of Kanbans available for triggering within the current configuration. It supports filtering through pre-configured groups and hashtags, allowing users to select specific Kanbans for execution via the Trigger menu.",
+        "content_type": [
+          "UI Description"
+        ],
+        "question_intents": [
+          "How to use the Trigger tab"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Kanbans",
+      "own_unit_ids": [
+        "sec_8c0e202b56c0f38af6680db7"
+      ],
+      "children": [
+        "n_3cbe0f4059c25815421c8807",
+        "n_bf59632285a851c31df6191e",
+        "n_32c42091be540a1c7a192e01",
+        "n_820b616a5398b09f6f5ddecb"
+      ],
+      "output": {
+        "summary": "The Kanbans menu provides a centralized interface for managing production Kanbans through dedicated tabs for filtering, viewing current status, and triggering execution. It includes specific controls for selecting Kanbans via groups or hashtags, monitoring running processes, and modifying their status or details.",
+        "content_type": [
+          "UI Description"
+        ],
+        "question_intents": [
+          "How to manage and trigger production Kanbans"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Simple View",
+      "own_unit_ids": [
+        "sec_29fed2f47db8fbc74b9e3132"
+      ],
+      "children": [
+        "n_71fab02b938d02904e4d057c",
+        "n_f2f5cddcd32ba8c9278e766e"
+      ],
+      "output": {
+        "summary": "Simple View is a minimal interface within the Qursor system that displays lock zones and station groups for quick monitoring. It presents the names, current states, and assigned tasks of stations within configured groups to facilitate easy reference.",
+        "content_type": [
+          "description"
+        ],
+        "question_intents": [
+          "What is Simple View?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Details tab",
+      "own_unit_ids": [
+        "sec_5291550716f1d4aa9afeb445"
+      ],
+      "children": [
+        "n_a624bb0b08defa17e0a63db7"
+      ],
+      "output": {
+        "summary": "The Details tab provides a universal view for monitoring and controlling station statuses, illustrated by the A1 station. It includes an overview of specific control buttons for actions such as disabling the station, switching to autonomous mode, and viewing tasks.",
+        "content_type": [
+          "instructional"
+        ],
+        "question_intents": [
+          "How to access and manage station details"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Stations Choice Menu",
+      "own_unit_ids": [
+        "sec_7be0bbd76d56d5f2c34be8e9"
+      ],
+      "children": [
+        "n_1c9755a712794a022cb23552",
+        "n_e0518e627094a5db24bb0228",
+        "n_b69cbccb9b9083f26041b194"
+      ],
+      "output": {
+        "summary": "The Stations Choice Menu provides an overview of all stations within a plant project, accessible via the navigation bar. It includes tabs for searching and selecting specific stations, monitoring and controlling station statuses, and viewing current or historical task logs.",
+        "content_type": [
+          "navigation"
+        ],
+        "question_intents": [
+          "How to manage and monitor stations"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "USER INTERFACE",
+      "own_unit_ids": [
+        "sec_26072182389cb8f6f07a00be"
+      ],
+      "children": [
+        "n_911df95585dd9a3670727eef",
+        "n_32d7775d5ef8c37a23ec568c",
+        "n_33e85292bfd76ed855e99522",
+        "n_5aa064125f98acd23e451191",
+        "n_25d385d2084244466af01dc1",
+        "n_d1db741284946631af1c1245",
+        "n_4729bb842358030eb70f21d1"
+      ],
+      "output": {
+        "summary": "This section provides a comprehensive overview of the tablet application's user interface, covering the login process, main navigation bar, and specific operational views. It details the functionality of key menus including Kanbans management, Simple View monitoring, station selection, manual AGV control, and the Node-RED extension tab.",
+        "content_type": [
+          "description"
+        ],
+        "question_intents": [
+          "How to navigate and operate the tablet application interface"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "TRIGGERING TASKS AND KANBANS",
+      "own_unit_ids": [
+        "sec_80528f8c9d73c5d65818895f"
+      ],
+      "children": [
+        "n_d8f4794eb5419b97363dd2d8",
+        "n_a1a438f293c1f9ff4c24863c"
+      ],
+      "output": {
+        "summary": "This section provides step-by-step tutorials for triggering Kanbans and tasks within the tablet application. It covers the specific procedures for filtering and selecting Kanban configurations as well as initiating tasks via the Stations Choice menu.",
+        "content_type": [
+          "tutorial"
+        ],
+        "question_intents": [
+          "How to trigger Kanbans and tasks using the tablet application"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Global settings configuration",
+      "own_unit_ids": [
+        "sec_6c7960ead69f0829b199c607"
+      ],
+      "children": [
+        "n_da782a308d8967e45aa1b6f9",
+        "n_bae2f24b58e420a19d9d9a1e"
+      ],
+      "output": {
+        "summary": "This section covers the configuration of global system settings, including defining the plant name via the projectName option and managing user account access through group memberships. It also details the setup for Single Sign-On (SSO) integration with Azure Active Directory, specifying the required tenant and application IDs, server address, and HTTPS security requirements.",
+        "content_type": [
+          "configuration"
+        ],
+        "question_intents": [
+          "How to configure global settings"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "QURSOR CONFIGURATION",
+      "own_unit_ids": [],
+      "children": [
+        "n_ab6ef93a9b3e0e4198aacbf9"
+      ],
+      "output": {
+        "summary": "This section details the configuration of global system settings, including defining the plant name and managing user account access through group memberships. It also covers the setup for Single Sign-On (SSO) integration with Azure Active Directory, specifying required tenant and application IDs, server address, and HTTPS security requirements.",
+        "content_type": [
+          "configuration"
+        ],
+        "question_intents": [
+          "How to configure global settings"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Qursor-Tablet-Application-EN",
+      "own_unit_ids": [],
+      "children": [
+        "n_df78dcebdc541a9ba7c1f72d",
+        "n_f05429dd3d54bcbdceea898c",
+        "n_d26ee68740279ecd4366ee60",
+        "n_1c04c0e085b4934664be713e"
+      ],
+      "output": {
+        "summary": "The Qursor Tablet Application documentation provides a comprehensive guide covering the user interface, operational tutorials for triggering tasks and Kanbans, and system configuration settings. It includes administrative details, interface navigation instructions, and specific setup procedures for global settings and SSO integration.",
+        "content_type": [
+          "documentation"
+        ],
+        "question_intents": [
+          "How to use and configure the Qursor Tablet Application"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Qursor-Tablet-Application-EN",
+      "own_unit_ids": [],
+      "children": [
+        "n_cc0edefc530b12f77aacab4f"
+      ],
+      "output": {
+        "summary": "The Qursor Tablet Application documentation provides a comprehensive guide covering the user interface, operational tutorials for triggering tasks and Kanbans, and system configuration settings. It includes administrative details, interface navigation instructions, and specific setup procedures for global settings and SSO integration.",
+        "content_type": [
+          "documentation"
+        ],
+        "question_intents": [
+          "How to use and configure the Qursor Tablet Application"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "USER MANUAL TRAFFIC ZONES CONFIGURATION",
+      "own_unit_ids": [
+        "sec_b635f573686d33058fec4ad7"
+      ],
+      "children": [
+        "n_d6120a72548d3576bc30a950"
+      ],
+      "output": {
+        "summary": "This section provides the issue date of 2023.01.11 for the user manual on traffic zones configuration.",
+        "content_type": [
+          "administrative_information"
+        ],
+        "question_intents": [],
+        "aliases": []
+      }
+    },
+    {
+      "title": "4.1 . Zones configurator",
+      "own_unit_ids": [
+        "sec_ce47e3f770ad14c45564f8e8"
+      ],
+      "children": [
+        "n_1ce7d0bfd5ec6b48e00cfc16"
+      ],
+      "output": {
+        "summary": "This section details the default settings and versioning capabilities of the zones configurator, including parameters for zone distances, server addresses, and the management of zones.json files. It further specifies the required attributes for defining individual zones, such as name, ID, and type, and describes the use of a visual editor for drawing and modifying zone polygons.",
+        "content_type": [
+          "Configuration"
+        ],
+        "question_intents": [
+          "How to configure zones"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "4. Configuration",
+      "own_unit_ids": [
+        "sec_d7cd3f6aa6c40bbdb69b8eda"
+      ],
+      "children": [
+        "n_cab286b851f388b6e1b4c01c",
+        "n_c56b1b6a9f9570d6e08c2d78",
+        "n_411e70fd9e8cb81c281ca429",
+        "n_f4464c9ad64ddf0963f6ec69"
+      ],
+      "output": {
+        "summary": "This section outlines the administrative configuration of Hector zones by Qursor users, detailing the use of the zones configurator for defining parameters and visual polygons. It explains the integration with Navithor maps through zone ID placement and ID mapping via the zones.json file, while highlighting operational limitations and sensitivity regarding map modifications.",
+        "content_type": [
+          "Technical Documentation"
+        ],
+        "question_intents": [
+          "How to configure Hector zones in Qursor"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Traffic-zones-configuration-1.2",
+      "own_unit_ids": [
+        "sec_1030897024e0aae1885b4ccf"
+      ],
+      "children": [
+        "n_ae6b5e99835c9e1aacd3a8a1",
+        "n_97d9c46f60294410e10c7675",
+        "n_61b3edf39545ccd5fe41b5d1",
+        "n_861784153a718053486374dc",
+        "n_4023081ccb3d1c74423d657a"
+      ],
+      "output": {
+        "summary": "This user manual documents the configuration of the Qursor platform's Hector connector, detailing the definition and management of 2D polygon zones for AGV traffic control. It explains the operational logic of traffic light zones for signal activation and lock zones for separating AGV and unmanaged vehicle areas, including procedures for manual overrides. The guide further covers the administrative setup of these zones using the configurator and their integration with Navithor maps via JSON mapping.",
+        "content_type": [
+          "technical_documentation"
+        ],
+        "question_intents": [
+          "How are traffic light and lock zones configured and managed in the Qursor platform?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Traffic-zones-configuration-1.2",
+      "own_unit_ids": [],
+      "children": [
+        "n_884a9f1370d1e1aa5e32da23"
+      ],
+      "output": {
+        "summary": "This user manual documents the configuration of the Qursor platform's Hector connector, detailing the definition and management of 2D polygon zones for AGV traffic control. It explains the operational logic of traffic light zones for signal activation and lock zones for separating AGV and unmanaged vehicle areas, including procedures for manual overrides. The guide further covers the administrative setup of these zones using the configurator and their integration with Navithor maps via JSON mapping.",
+        "content_type": [
+          "technical_documentation"
+        ],
+        "question_intents": [
+          "How are traffic light and lock zones configured and managed in the Qursor platform?"
+        ],
+        "aliases": []
+      }
+    },
+    {
+      "title": "Corpus navigation",
+      "own_unit_ids": [],
+      "children": [
+        "n_5e4cd5aecbcf7b067e4523f0",
+        "n_99dab3fc3b62ae80871d4bef",
+        "n_053d5d5664654ddfb93f1966",
+        "n_42aa2a5c4c8ef61b6834e398",
+        "n_0636b09d6201fe5cae08380d"
+      ],
+      "output": {
+        "summary": "This collection of user guides covers the operation and configuration of Qursor's various human-machine interfaces, including the AGV HMI, MAP dashboard, and Tablet Application. It details workflows for managing AGV modes, executing tasks, configuring Kanbans, and setting up traffic zones for vehicle control.",
+        "content_type": [
+          "User Interface Documentation"
+        ],
+        "question_intents": [
+          "How to operate and configure Qursor AGV interfaces and traffic zones"
+        ],
+        "aliases": [
+          "Qursor Interface Documentation"
+        ]
+      }
+    }
+  ],
+  "embedding_inputs": [],
+  "settings": {
+    "p": 10,
+    "max_top": 10
+  },
+  "input_units_hash": "db1969c7d89c05fcdf285af190c2ebe7dab7eb59afbe2ba590c93e4d3fa6c732",
+  "source_sections": 179,
+  "substantive_units": 151,
+  "empty_section_ids": [
+    "sec_3270699b8c006e543f13d378",
+    "sec_273d5db6b392d36b05491288",
+    "sec_57b54415d3d6865fba160191",
+    "sec_cde097056825480ac0faeb25",
+    "sec_4e960c50b13facd1d4559bcf",
+    "sec_02cea6c73b7da45e3fa9ab75",
+    "sec_ce2c7e2fad1692480d4908ce",
+    "sec_a5aa1e79ee6805d4f76af9c3",
+    "sec_06ebeb91e5d9c3485aa9bf89",
+    "sec_a891c3bb8c3c5e0b553267e9",
+    "sec_be8d8df9df5d3ff9a0e0abe9",
+    "sec_4632fdfb24abbe3501b56474",
+    "sec_73cd00a461ae85d5c2ce9709",
+    "sec_c138eb78b8d4bc178ffabe7d",
+    "sec_f1bcc181eba37b7f83a20af6",
+    "sec_739965185855883c7bab581e",
+    "sec_5e9ee7246fcd262e6d07c015",
+    "sec_0f57af1b13ee34f99a7055bb",
+    "sec_c6272fc5010ff1db367a4fbc",
+    "sec_76424a2920987b58be7d5c5a",
+    "sec_fb5dcf58381ff3d798b0a5c4",
+    "sec_6ded3eb1c7f0ffa44af24e84",
+    "sec_b2543131f868bf109be87289",
+    "sec_bc88015c640564288b5174da",
+    "sec_6d80863c554093fc751d0ee0",
+    "sec_460912930205bad2b14e50e4",
+    "sec_87e5c705875035c297b9a9ff",
+    "sec_38cda1dd1902afd5310d14ca"
+  ],
+  "valid": true,
+  "statistics": {
+    "nodes": 185,
+    "leaves": 124,
+    "groups": 0,
+    "max_depth": 7,
+    "max_width": 38,
+    "max_navigation_width": 38,
+    "secondary_edges": 0,
+    "top_level_entries": 5,
+    "cross_document_groups": 0,
+    "cross_document_group_ratio": null,
+    "depths": {
+      "n_8d69e962636bd9e983611f64": 0,
+      "n_5e4cd5aecbcf7b067e4523f0": 1,
+      "n_c844dba62f40646bc6672e00": 2,
+      "n_85c962234ce351a8d5a9f98a": 3,
+      "n_ad664cc2371d51b2ccb6ab80": 3,
+      "n_ccf3207344ba0f55500f7719": 3,
+      "n_7b2529587e125aa89fe72db7": 4,
+      "n_6b8ca0e782782b0b267a2c39": 4,
+      "n_931c2b7751b6b4908d664692": 3,
+      "n_71e4d584d45e3850d2f9c44f": 4,
+      "n_8d77fc58007dff3dab749ab2": 4,
+      "n_0499bdd5732c1f6cd30c703a": 4,
+      "n_3bccabc8225ad80406bdd26c": 3,
+      "n_2fa087f5700d4c78c95c3145": 3,
+      "n_203659848e1b9fcd804cf8b1": 4,
+      "n_65425aec00b799c2b26b65e1": 5,
+      "n_c7d540bda819cc94c272e381": 3,
+      "n_08a7c2b83658b297c109de5d": 4,
+      "n_e4ae354cfe7e31ed453640cd": 3,
+      "n_6f71669f0c0e143366420724": 4,
+      "n_14f9cac7f33692d8c14e725e": 3,
+      "n_38ef7ca40ec3f9e296df197a": 4,
+      "n_6d23e83e10056f2998d3b40c": 3,
+      "n_9823208b37ca050ca35592a4": 4,
+      "n_3f13efb4911ae2ab45e4499a": 3,
+      "n_4dacb6e2d5d7e9b5b3c5662e": 4,
+      "n_57bc80f490e8833017ec6033": 3,
+      "n_93db304abd47347c089a75e4": 4,
+      "n_99dab3fc3b62ae80871d4bef": 1,
+      "n_597d82fc6da5416accc2f97d": 2,
+      "n_0eddefcee3d8307e8dc142e2": 3,
+      "n_c083e31e095c8deb986aebdf": 3,
+      "n_a728bbfbfb614b1ec54cdad8": 3,
+      "n_156b417da469aacc8552a2eb": 4,
+      "n_9b39c2cbe3f62364c14b10ab": 4,
+      "n_828ffa6b1be58f304894a933": 4,
+      "n_7c8eb0aa9bd18adcaa7ce677": 4,
+      "n_ea3cdda40fb1a96954878e23": 3,
+      "n_e1eeba39a899c887ff1575cd": 3,
+      "n_d3a0adf67c353c5964826016": 4,
+      "n_26adb8fd61ea7b279e116f15": 3,
+      "n_c86ef16fd29adb70b7a8c506": 3,
+      "n_b75ebb242343fe3e2ee2cd61": 3,
+      "n_cd212b995bb473cc2d820f7a": 4,
+      "n_ad3f3b1312877dc16138ef17": 3,
+      "n_fc4c14998ff5af9c0b814ea0": 3,
+      "n_bdda801bd22a4c7410e00403": 3,
+      "n_05ec4c0602b2587f1f5def0d": 3,
+      "n_86f53f53a0a19c4983c02557": 4,
+      "n_11cc0f0bcd56cf673a85aca7": 4,
+      "n_906baf3a02d5fc5651ec2125": 3,
+      "n_b2d3fdc36bf2ae0a3780e4bf": 3,
+      "n_c70c1e9a785312732a73bb2a": 4,
+      "n_3dec0d16c19bacc54cca0027": 4,
+      "n_952bab5fd70d84e4f6ac5caf": 4,
+      "n_b48cdfd86e59cbb6ce55f952": 4,
+      "n_b4ee1f79610a3cd5a1e5b8be": 4,
+      "n_22ec24b125e651dadebc8435": 3,
+      "n_1cce2a3661c705068455c5e9": 4,
+      "n_5e7b916a2aad781724da2888": 3,
+      "n_053d5d5664654ddfb93f1966": 1,
+      "n_2bafcafa461e63e94d44edf2": 2,
+      "n_5efdab0844a7b4124a2ac028": 3,
+      "n_81e57ecf2f0afbffc587b2b2": 3,
+      "n_d6a21616641921a92711d896": 3,
+      "n_4893f402d5dd1a7bffe09bbc": 3,
+      "n_551fbeb9cea92c8cf3b964db": 4,
+      "n_0a4c0c321fe322413ba441f1": 4,
+      "n_652b223305e1b2a0fff1edf4": 4,
+      "n_db07396b51fda790acf5d64c": 4,
+      "n_7667a436070281a7c7919684": 3,
+      "n_e4dd86545d07aabd0b7126a8": 3,
+      "n_730ad0b0e03aa1130bf612c5": 4,
+      "n_9803bc1dc40a7f3d3f5fe633": 3,
+      "n_69a5c70ec1b7028efe029acc": 3,
+      "n_ab20276207cd4831fb75b9d2": 3,
+      "n_1abb236ad83246e739e12b0e": 4,
+      "n_447e1d4f88ed44ffff2cbfb6": 3,
+      "n_f4f0efb9353e3efd003078e8": 3,
+      "n_d15e16c206e8b6ff7a4ea849": 3,
+      "n_16c9ef8d9217c6840e99e78a": 3,
+      "n_375065c71afdc861860f8204": 4,
+      "n_9017c6f469af6eaa3f0f8ad6": 4,
+      "n_8b33aaae099b66966c91cade": 3,
+      "n_6625bf34dc0c77e7ab42cc85": 4,
+      "n_ff48e981df0c457fd7318e0b": 3,
+      "n_73fbabef8b2be6529bbea9b4": 4,
+      "n_82cabf3daac61dfe3655b3e3": 4,
+      "n_a2f459fb06fcee835699c705": 4,
+      "n_4c749e173a7b491f02350b5c": 4,
+      "n_7672e9844b84b7c2e89f3c13": 4,
+      "n_06d52deae093e151367c3da7": 3,
+      "n_e8ee5b261ccc7472794afd89": 4,
+      "n_66f294b90e54edefe4e3d1fa": 3,
+      "n_b421c7e30c370a40f43f96e1": 4,
+      "n_b6e253da6059fe229fa3c12c": 3,
+      "n_ee92a0e810727f4a2af53941": 3,
+      "n_65c36cb6d4621a50fda97843": 3,
+      "n_a2d2e3d5ca86eff3618e2963": 3,
+      "n_83c4a82307432c148c86cc5f": 3,
+      "n_a429b97cd457cba91538c9e3": 4,
+      "n_1777ee7409cff7a05431f83b": 3,
+      "n_dffc02aea8c54ddbfc5e984e": 3,
+      "n_06edb0e40d40ada87c9a955b": 4,
+      "n_bcdeffa9af0ded4ad9052b89": 3,
+      "n_d170956078dcc3a69b89db4b": 3,
+      "n_a2cbf66f4d97ce230be3bc8e": 3,
+      "n_b38f2da4c05ead3ab9f7b9ff": 4,
+      "n_72ece918befb15ebfb794604": 4,
+      "n_02314730393c4e05f7c3c94c": 4,
+      "n_93f9f900e27049e101be935e": 3,
+      "n_d607316a7c106d9f563630c8": 4,
+      "n_f100dc14d0528b5ec60ba418": 4,
+      "n_631dd76e59b3dede8485ba36": 3,
+      "n_289fb690557d8d2f38826c13": 3,
+      "n_0ad512419b8c581926e62100": 4,
+      "n_ec150ed80d6111bb5c2d9d1e": 4,
+      "n_aada9b7f29534687df4e9129": 5,
+      "n_c4c72b1b552f28c563f58729": 3,
+      "n_4bb82c4495ede8f744982b6c": 3,
+      "n_186f2ec1dbfffb1330f9639b": 3,
+      "n_c27ee75e540c116028ea1706": 3,
+      "n_7b9c77009d36ab830c846565": 3,
+      "n_6caaafe4fe4aa11a71f3e883": 3,
+      "n_a0c3a41196644da72439be27": 3,
+      "n_0db6fdaad61be6f9cb29ca79": 3,
+      "n_7785c533b01e96856a156d56": 4,
+      "n_967e47b81ddbdf35eae4d9b5": 4,
+      "n_a9a160bbe9886c2ca9fb6ab9": 5,
+      "n_56c882bf689b2fbdf338f12c": 5,
+      "n_42aa2a5c4c8ef61b6834e398": 1,
+      "n_cc0edefc530b12f77aacab4f": 2,
+      "n_df78dcebdc541a9ba7c1f72d": 3,
+      "n_5f366c184777e2daaece3aad": 4,
+      "n_f05429dd3d54bcbdceea898c": 3,
+      "n_911df95585dd9a3670727eef": 4,
+      "n_cd627b0e1e9784a0c74a1c75": 5,
+      "n_86559fc24e4cf4265877afb8": 5,
+      "n_32d7775d5ef8c37a23ec568c": 4,
+      "n_78777e7e13533da8e4e8b8e6": 5,
+      "n_ca9d085842e2b06e882efbc5": 5,
+      "n_fa355f0ca4693fceccce9790": 5,
+      "n_33e85292bfd76ed855e99522": 4,
+      "n_3cbe0f4059c25815421c8807": 5,
+      "n_bf59632285a851c31df6191e": 5,
+      "n_32c42091be540a1c7a192e01": 5,
+      "n_3179d82c36e7af34a8844218": 6,
+      "n_f549efebf4123b007eebb669": 7,
+      "n_4df412400e2be5d157226f08": 6,
+      "n_820b616a5398b09f6f5ddecb": 5,
+      "n_d1aa26b243c29e7d47ef6da4": 6,
+      "n_51b3d82b7c4b0a85895fae24": 7,
+      "n_465f2abf8ca82a3a9ed20d0c": 7,
+      "n_1744a711d17fc97aa9537612": 6,
+      "n_c180c6bbed0a96a26978c5f6": 6,
+      "n_5aa064125f98acd23e451191": 4,
+      "n_71fab02b938d02904e4d057c": 5,
+      "n_f2f5cddcd32ba8c9278e766e": 5,
+      "n_25d385d2084244466af01dc1": 4,
+      "n_1c9755a712794a022cb23552": 5,
+      "n_e0518e627094a5db24bb0228": 5,
+      "n_a624bb0b08defa17e0a63db7": 6,
+      "n_b69cbccb9b9083f26041b194": 5,
+      "n_d1db741284946631af1c1245": 4,
+      "n_4729bb842358030eb70f21d1": 4,
+      "n_d26ee68740279ecd4366ee60": 3,
+      "n_d8f4794eb5419b97363dd2d8": 4,
+      "n_a1a438f293c1f9ff4c24863c": 4,
+      "n_1c04c0e085b4934664be713e": 3,
+      "n_ab6ef93a9b3e0e4198aacbf9": 4,
+      "n_da782a308d8967e45aa1b6f9": 5,
+      "n_bae2f24b58e420a19d9d9a1e": 5,
+      "n_0636b09d6201fe5cae08380d": 1,
+      "n_884a9f1370d1e1aa5e32da23": 2,
+      "n_ae6b5e99835c9e1aacd3a8a1": 3,
+      "n_d6120a72548d3576bc30a950": 4,
+      "n_97d9c46f60294410e10c7675": 3,
+      "n_61b3edf39545ccd5fe41b5d1": 3,
+      "n_861784153a718053486374dc": 3,
+      "n_4023081ccb3d1c74423d657a": 3,
+      "n_cab286b851f388b6e1b4c01c": 4,
+      "n_1ce7d0bfd5ec6b48e00cfc16": 5,
+      "n_c56b1b6a9f9570d6e08c2d78": 4,
+      "n_411e70fd9e8cb81c281ca429": 4,
+      "n_f4464c9ad64ddf0963f6ec69": 4
+    }
+  },
+  "elapsed_seconds": 581.5160000000033
+}

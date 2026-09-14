@@ -1,0 +1,62 @@
+{
+  "data": {
+    "aliases": [],
+    "content_type": [
+      "Instructional"
+    ],
+    "question_intents": [
+      "How to manage Kanban steps and station reservations"
+    ],
+    "summary": "This section outlines the procedures for adding, configuring, reordering, and removing steps in a Kanban board, including the definition of basic configuration fields such as Name, Symbol, Priority, and Hashtags. It also details the management of station reservations for AGVs, covering the addition, selection, prioritization, and removal of stations to determine vehicle requirements."
+  },
+  "model": "qwen3.8:27b-q4_K_M",
+  "usage": {
+    "prompt_tokens": 570,
+    "completion_tokens": 127,
+    "total_tokens": 697
+  },
+  "elapsed_seconds": 8.390999999988708,
+  "raw_content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Instructional\"\n  ],\n  \"question_intents\": [\n    \"How to manage Kanban steps and station reservations\"\n  ],\n  \"summary\": \"This section outlines the procedures for adding, configuring, reordering, and removing steps in a Kanban board, including the definition of basic configuration fields such as Name, Symbol, Priority, and Hashtags. It also details the management of station reservations for AGVs, covering the addition, selection, prioritization, and removal of stations to determine vehicle requirements.\"\n}",
+  "cached": false,
+  "thinking_content": "",
+  "provenance": {
+    "stage": "node:87aaf74b9c0d64e4",
+    "attempts": 1,
+    "prompt_sha256": "9421d7ae732f69616778e6b7cf9d173fb14e2ce6c913cf20e37d040176998cae",
+    "model_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "audit_dir": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\artifacts\\comparison\\qursor-jj-qwen27b-qwenembed-v3\\source\\llm_audit\\requests\\9421d7ae732f69616778e6b7cf9d173fb14e2ce6c913cf20e37d040176998cae",
+    "tokenizer": {
+      "implementation": "llama.cpp",
+      "build": "10091",
+      "version": "version: 10091 (b4d6c7d8f)\r\nbuilt with Clang 20.1.8 for Windows x86_64",
+      "executable_sha256": "9b8cdf312884a25e16d876421f354282b42fe15ee9d9080f95e00249405a84d1",
+      "gguf_path": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\.tools\\jj-qwen27b\\tokenizer.gguf",
+      "gguf_sha256": "61fb287d6c5914300ba710334bb591ae41238147b52506d0fd58ce76b0248f48",
+      "add_special": true,
+      "parse_special": true,
+      "remote_model_path": "/home/jj/Large_Space_A/chiu/PW/ollama-qwen38/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+      "remote_blob_sha256": "f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+      "model_info_sha256": "9710a6b00da79d1450c9d6a603cfd8cf48c61c823baeecc84a13c9c80e11c086",
+      "metadata_only": true,
+      "tensor_count": 0,
+      "architecture_mapping": {
+        "source": "qwen35",
+        "target": "qwen35"
+      },
+      "pretokenizer_mapping": {
+        "source": "qwen35",
+        "target": "qwen35"
+      },
+      "source_manifest_sha256": "5f904d69530e991cf371dab754b285e1dbad4924d808271ec782da79d4f03fdb"
+    },
+    "measurement": {
+      "input_tokens": 570,
+      "context_length": 131072,
+      "output_reserve": 8192,
+      "available_input_tokens": 122880,
+      "rendered_prompt_sha256": "5dbb275e7dec5ad2fea3e2cb4ae8ff8a596e5ffceddc1c14d6582e9ff76890b3",
+      "ollama_rendered_prompt_sha256": "5dbb275e7dec5ad2fea3e2cb4ae8ff8a596e5ffceddc1c14d6582e9ff76890b3",
+      "appended_channel_header": ""
+    }
+  }
+}

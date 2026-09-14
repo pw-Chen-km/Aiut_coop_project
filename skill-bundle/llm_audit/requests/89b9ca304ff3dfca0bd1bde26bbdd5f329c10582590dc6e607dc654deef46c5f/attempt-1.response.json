@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:20:09.923697931Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Configuration Reference\"\n  ],\n  \"question_intents\": [\n    \"How to configure Kanban settings, relations, and dynamic stations\"\n  ],\n  \"summary\": \"This section details the configuration of Kanban relations to regulate workflow between steps and sequence jobs, as well as the setup of allowed dynamic stations for real-time station definition. It covers how to define specific stations that external systems can use to replace configured dynamic stations when triggering a Kanban.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4482640023,
+  "load_duration": 1912263,
+  "prompt_eval_count": 602,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 436930000,
+  "eval_count": 115,
+  "eval_duration": 3825923000
+}

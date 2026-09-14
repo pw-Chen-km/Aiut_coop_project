@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:22:36.495231721Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"UI Description\"\n  ],\n  \"question_intents\": [\n    \"How to manage and trigger production Kanbans\"\n  ],\n  \"summary\": \"The Kanbans menu provides a centralized interface for managing production Kanbans through dedicated tabs for filtering, viewing current status, and triggering execution. It includes specific controls for selecting Kanbans via groups or hashtags, monitoring running processes, and modifying their status or details.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4434039023,
+  "load_duration": 1753779,
+  "prompt_eval_count": 753,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 523961000,
+  "eval_count": 110,
+  "eval_duration": 3687972000
+}

@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:15:37.96246633Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Reference\"\n  ],\n  \"question_intents\": [\n    \"What are the AGV operation modes and how to switch between them?\"\n  ],\n  \"summary\": \"This section defines the three AGV operation modes—Automatic, Manual, and Setup—and explains how to switch between them using the main panel switch. It also details the procedure for enabling manual or setup control, including the requirement for a single operator and the specific actions available via the HMI interface.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4564608755,
+  "load_duration": 1638490,
+  "prompt_eval_count": 617,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 486641000,
+  "eval_count": 118,
+  "eval_duration": 3923814000
+}

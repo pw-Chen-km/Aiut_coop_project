@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: qegs
+Version: 0.1.0
+Summary: Adaptive corpus-to-skill navigation, scoped dense RAG and joint SkillOPT research tooling
+Requires-Python: >=3.11
+Provides-Extra: pdf
+Requires-Dist: pypdf>=5; extra == "pdf"
+Provides-Extra: test
+Requires-Dist: pytest>=8; extra == "test"
+Requires-Dist: scikit-learn>=1.8; extra == "test"
+Provides-Extra: doc2skill
+Requires-Dist: docling>=2; extra == "doc2skill"
+Requires-Dist: numpy>=1.26; extra == "doc2skill"
+Requires-Dist: transformers>=4.51; extra == "doc2skill"
+Requires-Dist: torch>=2.6; extra == "doc2skill"
+Requires-Dist: jsonschema>=4.23; extra == "doc2skill"
+Provides-Extra: qa
+Requires-Dist: numpy>=1.26; extra == "qa"
+Requires-Dist: transformers>=4.51; extra == "qa"
+Requires-Dist: torch>=2.6; extra == "qa"
+Requires-Dist: jsonschema>=4.23; extra == "qa"
+Provides-Extra: native
+Requires-Dist: docling-core[chunking]==2.94.1; extra == "native"
+Requires-Dist: numpy>=1.26; extra == "native"
+Requires-Dist: transformers>=4.51; extra == "native"
+Requires-Dist: torch>=2.6; extra == "native"
+Requires-Dist: jsonschema>=4.23; extra == "native"
+Provides-Extra: comparison
+Requires-Dist: docling==2.125.0; extra == "comparison"
+Requires-Dist: docling-core[chunking]==2.94.1; extra == "comparison"
+Requires-Dist: numpy>=1.26; extra == "comparison"
+Requires-Dist: scikit-learn>=1.8; extra == "comparison"
+Requires-Dist: transformers>=5.6; extra == "comparison"
+Requires-Dist: torch>=2.6; extra == "comparison"
+Requires-Dist: jsonschema>=4.23; extra == "comparison"
+Requires-Dist: pypdf>=5; extra == "comparison"
+Requires-Dist: gguf==0.19.0; extra == "comparison"
+Provides-Extra: skillopt
+Requires-Dist: openai>=1.30; extra == "skillopt"
+Requires-Dist: pyyaml>=6; extra == "skillopt"
+Requires-Dist: numpy>=1.26; extra == "skillopt"
+Requires-Dist: openpyxl>=3.1; extra == "skillopt"
+Requires-Dist: azure-identity>=1.15; extra == "skillopt"
+Requires-Dist: azure-core>=1.30; extra == "skillopt"
+Requires-Dist: httpx>=0.27; extra == "skillopt"

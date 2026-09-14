@@ -1,0 +1,153 @@
+{
+  "status": "complete",
+  "data": {
+    "aliases": [],
+    "content_type": [
+      "technical_documentation"
+    ],
+    "question_intents": [
+      "How are traffic light and lock zones configured and managed in the Qursor platform?"
+    ],
+    "summary": "This user manual documents the configuration of the Qursor platform's Hector connector, detailing the definition and management of 2D polygon zones for AGV traffic control. It explains the operational logic of traffic light zones for signal activation and lock zones for separating AGV and unmanaged vehicle areas, including procedures for manual overrides. The guide further covers the administrative setup of these zones using the configurator and their integration with Navithor maps via JSON mapping.",
+    "title": "Traffic-zones-configuration-1.2"
+  },
+  "response": {
+    "data": {
+      "aliases": [],
+      "content_type": [
+        "technical_documentation"
+      ],
+      "question_intents": [
+        "How are traffic light and lock zones configured and managed in the Qursor platform?"
+      ],
+      "summary": "This user manual documents the configuration of the Qursor platform's Hector connector, detailing the definition and management of 2D polygon zones for AGV traffic control. It explains the operational logic of traffic light zones for signal activation and lock zones for separating AGV and unmanaged vehicle areas, including procedures for manual overrides. The guide further covers the administrative setup of these zones using the configurator and their integration with Navithor maps via JSON mapping."
+    },
+    "model": "qwen3.8:27b-q4_K_M",
+    "usage": {
+      "prompt_tokens": 966,
+      "completion_tokens": 152,
+      "total_tokens": 1118
+    },
+    "elapsed_seconds": 9.5,
+    "raw_content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"technical_documentation\"\n  ],\n  \"question_intents\": [\n    \"How are traffic light and lock zones configured and managed in the Qursor platform?\"\n  ],\n  \"summary\": \"This user manual documents the configuration of the Qursor platform's Hector connector, detailing the definition and management of 2D polygon zones for AGV traffic control. It explains the operational logic of traffic light zones for signal activation and lock zones for separating AGV and unmanaged vehicle areas, including procedures for manual overrides. The guide further covers the administrative setup of these zones using the configurator and their integration with Navithor maps via JSON mapping.\"\n}",
+    "cached": false,
+    "thinking_content": "",
+    "provenance": {
+      "stage": "node:f865e96d2d5323d6",
+      "attempts": 1,
+      "prompt_sha256": "a717e2aab20aebe113b3e7db616b2209256da610f80ec07882164de16c6737e7",
+      "model_digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+      "audit_dir": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\artifacts\\comparison\\qursor-jj-qwen27b-qwenembed-v3\\source\\llm_audit\\requests\\a717e2aab20aebe113b3e7db616b2209256da610f80ec07882164de16c6737e7",
+      "tokenizer": {
+        "implementation": "llama.cpp",
+        "build": "10091",
+        "version": "version: 10091 (b4d6c7d8f)\r\nbuilt with Clang 20.1.8 for Windows x86_64",
+        "executable_sha256": "9b8cdf312884a25e16d876421f354282b42fe15ee9d9080f95e00249405a84d1",
+        "gguf_path": "C:\\Users\\Patrick\\Documents\\ChatGPT\\Navigation_RAG\\.tools\\jj-qwen27b\\tokenizer.gguf",
+        "gguf_sha256": "61fb287d6c5914300ba710334bb591ae41238147b52506d0fd58ce76b0248f48",
+        "add_special": true,
+        "parse_special": true,
+        "remote_model_path": "/home/jj/Large_Space_A/chiu/PW/ollama-qwen38/models/blobs/sha256-f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "remote_blob_sha256": "f5f1dd8920d417aac2718b0bda3403da274301efdd6760b4f0f4b864ff2ad57d",
+        "model_info_sha256": "9710a6b00da79d1450c9d6a603cfd8cf48c61c823baeecc84a13c9c80e11c086",
+        "metadata_only": true,
+        "tensor_count": 0,
+        "architecture_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "pretokenizer_mapping": {
+          "source": "qwen35",
+          "target": "qwen35"
+        },
+        "source_manifest_sha256": "5f904d69530e991cf371dab754b285e1dbad4924d808271ec782da79d4f03fdb"
+      },
+      "measurement": {
+        "input_tokens": 966,
+        "context_length": 131072,
+        "output_reserve": 8192,
+        "available_input_tokens": 122880,
+        "rendered_prompt_sha256": "4d254f736cbd6cd8691eb1f1fc9a5aa533543ceef037f2f24df68fa671f67758",
+        "ollama_rendered_prompt_sha256": "4d254f736cbd6cd8691eb1f1fc9a5aa533543ceef037f2f24df68fa671f67758",
+        "appended_channel_header": ""
+      }
+    }
+  },
+  "descriptor_tokens": 143,
+  "stage": "node:f865e96d2d5323d6",
+  "records": {
+    "own_body": [
+      {
+        "title": "Traffic-zones-configuration-1.2",
+        "summary": "The section contains administrative information identifying the entity as AFORMIC POLSKA Sp. z o.o.",
+        "content_type": [
+          "administrative"
+        ],
+        "question_intents": [],
+        "aliases": []
+      }
+    ],
+    "children": [
+      {
+        "node_id": "n_ae6b5e99835c9e1aacd3a8a1",
+        "title": "USER MANUAL TRAFFIC ZONES CONFIGURATION",
+        "summary": "This section provides the issue date of 2023.01.11 for the user manual on traffic zones configuration.",
+        "content_type": [
+          "administrative_information"
+        ],
+        "question_intents": [],
+        "aliases": []
+      },
+      {
+        "node_id": "n_97d9c46f60294410e10c7675",
+        "title": "1. Overview",
+        "summary": "The Qursor platform can be installed with an optional Hector connector service that interacts with external traffic systems via REST API or a dummy system. It defines 2D polygon zones, specifically traffic light and lock zones, to control AGV behavior and visualize zone states.",
+        "content_type": [
+          "overview"
+        ],
+        "question_intents": [
+          "What is the Qursor platform and its Hector connector?"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_61b3edf39545ccd5fe41b5d1",
+        "title": "2. Traffic Light zones",
+        "summary": "Traffic light zones are used for managing traffic lights, consisting of interdependent yellow and red zones. When an AGV enters the yellow zone, the yellow light activates; upon entering the associated red zone, the yellow light turns off and the red light turns on.",
+        "content_type": [
+          "Technical Description"
+        ],
+        "question_intents": [
+          "How do traffic light zones function?"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_861784153a718053486374dc",
+        "title": "3. Lock zones",
+        "summary": "Lock zones are used for traffic management to separate areas accessible to AGVs from those for unmanaged vehicles. When free, AGVs can enter and block unmanaged vehicles; when locked by an external vehicle, the zone turns grey and displays blocking and waiting vehicle names. The next vehicle in the queue can lock the zone upon release. Forceful release of external locks or manual bypass of permissions is possible but not recommended due to collision risks.",
+        "content_type": [
+          "procedural"
+        ],
+        "question_intents": [
+          "How do lock zones function for traffic management?"
+        ],
+        "aliases": []
+      },
+      {
+        "node_id": "n_4023081ccb3d1c74423d657a",
+        "title": "4. Configuration",
+        "summary": "This section outlines the administrative configuration of Hector zones by Qursor users, detailing the use of the zones configurator for defining parameters and visual polygons. It explains the integration with Navithor maps through zone ID placement and ID mapping via the zones.json file, while highlighting operational limitations and sensitivity regarding map modifications.",
+        "content_type": [
+          "Technical Documentation"
+        ],
+        "question_intents": [
+          "How to configure Hector zones in Qursor"
+        ],
+        "aliases": []
+      }
+    ]
+  },
+  "support_policy": "selected-block-ids-exact-full-block-v1",
+  "title_policy": "program-owned-fixed-model-names-new-v1"
+}

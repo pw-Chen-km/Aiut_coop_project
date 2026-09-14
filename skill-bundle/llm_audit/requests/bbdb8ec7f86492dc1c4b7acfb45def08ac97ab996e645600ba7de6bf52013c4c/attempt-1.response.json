@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:22:26.943799476Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"UI Description\"\n  ],\n  \"question_intents\": [\n    \"How to use the Trigger tab\"\n  ],\n  \"summary\": \"The Trigger tab displays a scrollable list of Kanbans available for triggering within the current configuration. It supports filtering through pre-configured groups and hashtags, allowing users to select specific Kanbans for execution via the Trigger menu.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4027581475,
+  "load_duration": 1652441,
+  "prompt_eval_count": 658,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 494717000,
+  "eval_count": 99,
+  "eval_duration": 3309561000
+}

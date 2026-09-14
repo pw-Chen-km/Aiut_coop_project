@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:18:36.981033766Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"description\"\n  ],\n  \"question_intents\": [\n    \"How to manage application settings and system modes\"\n  ],\n  \"summary\": \"This section outlines the Qursor Configurator interface, detailing how to switch between automatic and autonomous system modes and access user-specific preferences such as language and session management. It also covers the application's core purpose of defining stations, tasks, and AGVs, along with instructions for verifying the current software version.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4559016762,
+  "load_duration": 1661230,
+  "prompt_eval_count": 764,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 523371000,
+  "eval_count": 114,
+  "eval_duration": 3816505000
+}

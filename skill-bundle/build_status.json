@@ -1,0 +1,79 @@
+{
+  "schema_version": "comparison-build-v1",
+  "status": "complete",
+  "strategy": "source",
+  "source_hashes": {
+    "C:\\Users\\Patrick\\Downloads\\Qursor-AGV-HMI-userguide-20221209.pdf": "1888c438d0176ef960f91d874de244208679ec41a94cb5fc27a8ce2ba89d349a",
+    "C:\\Users\\Patrick\\Downloads\\Qursor-MAP-userguide-General-20221107.pdf": "e874f2aa0c3e3d31322d642612f602defa76bad69dcc49a6bb4543038e63c5c5",
+    "C:\\Users\\Patrick\\Downloads\\Qursor-MAP-userguide-Kanbans-20250121.pdf": "05729a0db4060b196f7c0f3556ba1654e4f2cb43d4403ebc85ba6564a480ce3d",
+    "C:\\Users\\Patrick\\Downloads\\Qursor-Tablet-Application-EN.pdf": "58cda35bf436732491d48c6d71fb195532d912a562b04029cc8a191fa8502539",
+    "C:\\Users\\Patrick\\Downloads\\Traffic-zones-configuration-1.2.pdf": "9bae63abee2f5aaa4b5e6baac0fdb9919e9867453ada6ad1f88979e56c665ea0"
+  },
+  "started_at": 1788984715.7837882,
+  "embedding": {
+    "encoder": "qwen3_remote",
+    "model": "Qwen/Qwen3-Embedding-8B",
+    "revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
+    "device": "JJ:cuda:0,1",
+    "query_prefix": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+    "passage_prefix": "",
+    "pooling": "last token + L2",
+    "dtype": "bfloat16; float32 normalization/output",
+    "max_tokens": 32768,
+    "dimensions": 4096,
+    "torch": "2.9.1+cu128",
+    "transformers": "4.57.6"
+  },
+  "llm_configuration": {
+    "endpoint": "http://127.0.0.1:11440",
+    "model": "qwen3.8:27b-q4_K_M",
+    "digest": "25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e",
+    "context_tokens": 131072,
+    "max_output_tokens": 8192,
+    "timeout_seconds": 900,
+    "gguf_path": ".tools/jj-qwen27b/tokenizer.gguf",
+    "tokenizer_executable": ".tools/llama-b10091/llama-tokenize.exe",
+    "ollama_version": "0.33.3",
+    "think": false,
+    "schema_mode": "native",
+    "temperature": 0,
+    "tokenizer_source_manifest": ".tools/jj-qwen27b/tokenizer.json",
+    "generation_mode": "chat"
+  },
+  "builder_implementation_hashes": {
+    "comparison_builders.py": "aaf51bdb26b24262fe5c47d1442b91be18b49f550a487809919fa6db9dd1ca70",
+    "comparison_corpus2skill.py": "751fe5159e25b507bb267c287e09922141efa3cc3bd7127fb210b5e730303162",
+    "comparison_requests.py": "3e60d102509f1b7c5a3e2c920b422b833cc67416879950667472c1947f81bdb0",
+    "comparison_metadata.py": "d0f6941a3c92b19bdbc0f712a849a22a5ec8a4abed685648548948b7fb32697d",
+    "adaptive.py": "0dacdea4df07ad9a05a69e1dbd6ad22c76b07c88459fa765d75f5e52e32e31ae",
+    "_vendor/corpus2skill/clustering.py": "6c0b8aea1037bd017e015aa71b585d2ca9bf91191146f5439e5cb16352843887",
+    "_vendor/corpus2skill/repartition_prompt.py": "4b24965ca5ff04ec3182d243e4f8dce0a4e1df5811e6ca20f845d343cbdb87a1"
+  },
+  "builder_settings": {
+    "p": 10,
+    "max_top": 10
+  },
+  "elapsed_seconds": 784.1032857894897,
+  "counts": {
+    "documents": 5,
+    "sections": 179,
+    "blocks": 1602,
+    "source_units": 1563,
+    "chunks": 155,
+    "figures": 324,
+    "furniture": 367,
+    "units": 151
+  },
+  "preparation_fingerprint": "323d975238c7a02fd36207944c808ce932b61cc9b3f4eeefec5da206de85c1a3",
+  "llm_cost": {
+    "generation_calls": 61,
+    "cache_hits": 0,
+    "prompt_tokens": 39789,
+    "completion_tokens": 6752,
+    "total_tokens": 46541,
+    "elapsed_seconds": 484.6269999999786,
+    "calibration_calls": 1,
+    "calibration_prompt_tokens": 76,
+    "calibration_completion_tokens": 6
+  }
+}

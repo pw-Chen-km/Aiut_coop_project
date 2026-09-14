@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:24:08.081297282Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"administrative_information\"\n  ],\n  \"question_intents\": [],\n  \"summary\": \"This section provides the issue date of 2023.01.11 for the user manual on traffic zones configuration.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2787922103,
+  "load_duration": 1785281,
+  "prompt_eval_count": 333,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 301502000,
+  "eval_count": 68,
+  "eval_duration": 2267923000
+}

@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:23:41.471514444Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"configuration\"\n  ],\n  \"question_intents\": [\n    \"How to configure global settings\"\n  ],\n  \"summary\": \"This section details the configuration of global system settings, including defining the plant name and managing user account access through group memberships. It also covers the setup for Single Sign-On (SSO) integration with Azure Active Directory, specifying required tenant and application IDs, server address, and HTTPS security requirements.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4211779458,
+  "load_duration": 1564840,
+  "prompt_eval_count": 397,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 343192000,
+  "eval_count": 109,
+  "eval_duration": 3639428000
+}

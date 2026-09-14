@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:20:39.470646429Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"instruction\"\n  ],\n  \"question_intents\": [\n    \"How to edit and configure sequence job parameters and triggers\"\n  ],\n  \"summary\": \"This section guides users on editing sequence jobs by selecting a job and entering new parameters in the Edit sequence job window. It details the configuration of the next job, including conditional triggers for when conditions are met or not met. Additionally, it defines specific trigger parameters such as station, destination, AGV type, and execution conditions based on station status, items, dynamic stations, or custom parameters.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 5109575308,
+  "load_duration": 1618990,
+  "prompt_eval_count": 564,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 432971000,
+  "eval_count": 134,
+  "eval_duration": 4463839000
+}

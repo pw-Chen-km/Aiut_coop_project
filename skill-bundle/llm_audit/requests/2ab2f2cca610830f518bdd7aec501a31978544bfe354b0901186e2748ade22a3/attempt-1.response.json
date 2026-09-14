@@ -1,0 +1,17 @@
+{
+  "model": "qwen3.8:27b-q4_K_M",
+  "created_at": "2026-09-09T20:18:06.381156026Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"aliases\": [],\n  \"content_type\": [\n    \"Reference\"\n  ],\n  \"question_intents\": [\n    \"What do the diagnostic message components mean?\"\n  ],\n  \"summary\": \"This section defines the structure of diagnostic messages, detailing the components sent from various modules. It specifies the use of module abbreviations such as QFM and OM, along with severity levels including Information, Error, and Warning.\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 3785167967,
+  "load_duration": 1653164,
+  "prompt_eval_count": 378,
+  "prompt_eval_cached_count": 105,
+  "prompt_eval_duration": 339572000,
+  "eval_count": 97,
+  "eval_duration": 3230932000
+}

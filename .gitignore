@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+models/
+logs/
+*.local.toml
+*.local.json
