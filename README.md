@@ -14,4 +14,10 @@ $env:PYTHONPATH='src'; python -m qa_agent.cli validate-bundle --bundle-dir skill
 
 Qwen generation is provisioned by the company server. BGE-M3 is a local Hugging Face model and must be downloaded or copied into the configured cache before starting the service; model weights and credentials are intentionally excluded.
 
+For a machine with Hugging Face access, provision the pinned embedding files with:
+
+```powershell
+hf download BAAI/bge-m3 --revision 5617a9f61b028005a4858fdac845db406aefb181 --local-dir models/bge-m3
+```
+
 The `skill-bundle` directory is the private A artifact and must be transferred with this repository. Future navigation algorithms can be added behind the service adapter while keeping `/v1/answer` unchanged.
