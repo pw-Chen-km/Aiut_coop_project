@@ -1,12 +1,11 @@
 bundle_dir = "../skill-bundle"
 [embedding]
-encoder = "qwen3_remote"
-model = "Qwen/Qwen3-Embedding-8B"
-revision = "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af"
-endpoint = "http://127.0.0.1:11441"
-tokenizer_dir = "../models/qwen3-embedding-tokenizer"
-generation_endpoint = "http://127.0.0.1:11440"
-generation_model = "qwen3.8:27b-q4_K_M"
+encoder = "bge"
+model = "BAAI/bge-m3"
+revision = "5617a9f61b028005a4858fdac845db406aefb181"
+local_path = "../models/bge-m3"
+threads = 4
+batch_size = 2
 [runtime]
 endpoint = "http://127.0.0.1:11440"
 model = "qwen3.8:27b-q4_K_M"

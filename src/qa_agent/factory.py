@@ -40,6 +40,7 @@ def load_online_config(path) -> dict:
     if set(config["answer"]) - ANSWER_OPTIONS:
         raise ValueError("Unknown answer options; endpoint/model belong only in runtime")
     for mapping, key in ((config, "bundle_dir"), (config["embedding"], "cache_dir"),
+                         (config["embedding"], "local_path"),
                          (config["runtime"], "gguf_path"), (config["runtime"], "tokenizer_path"),
                          (config["runtime"], "policy_path"), (config["answer"], "prompt_path")):
         if mapping.get(key):

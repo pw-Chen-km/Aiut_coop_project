@@ -19,7 +19,7 @@ from qa_agent.bundle import validate_serving_bundle
 def _session_factory(config):
     """Select the runtime matching the immutable embedding in the A bundle."""
     manifest = validate_serving_bundle(config["bundle_dir"])
-    if manifest.get("embedding", {}).get("encoder") == "qwen3_remote":
+    if manifest.get("embedding", {}).get("encoder") in {"qwen3_remote", "bge"}:
         from qa_agent.factory import create_comparison_session
         return create_comparison_session
     from qa_agent.factory import create_session

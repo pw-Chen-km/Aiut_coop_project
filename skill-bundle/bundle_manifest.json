@@ -3,18 +3,16 @@
   "private_data": true,
   "source_build_signature": "c633a54b7212f10ba80004ae14925ce7da232b5a27b88fd0123ea8797d291b43",
   "embedding": {
-    "encoder": "qwen3_remote",
-    "model": "Qwen/Qwen3-Embedding-8B",
-    "revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
-    "device": "JJ:cuda:0,1",
-    "query_prefix": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "device": "cpu",
+    "query_prefix": "",
     "passage_prefix": "",
-    "pooling": "last token + L2",
-    "dtype": "bfloat16; float32 normalization/output",
-    "max_tokens": 32768,
-    "dimensions": 4096,
-    "torch": "2.9.1+cu128",
-    "transformers": "4.57.6"
+    "pooling": "CLS + L2",
+    "dtype": "float32",
+    "max_tokens": 8192,
+    "dimensions": 1024,
+    "encoder": "bge"
   },
   "counts": {
     "documents": 5,
@@ -28,17 +26,17 @@
   },
   "artifacts": {
     "blocks.jsonl": "dd5fef4c237fc8ebc96642f54ac4b45fb7f2d407bd345610521d8dd8af1f9fbe",
+    "build_status.json": "2d4796bee5a0613d4d2868c51df067525f1757967cd03cfaf7a4890efb0ce2fe",
     "builder_audit.json": "c7abd69412058ce9b14718b4fd09c0d68069ac28b756862accbe505efb435713",
-    "build_status.json": "ba75d0ed5168615673d03023739ec797344fea3676f0279ea63b41c909197034",
     "chunks.jsonl": "2dbf611244379ea53b4ffa9f2fc562e264eaed9ba8486d3bc7bde2d14a8ebd66",
-    "corpus.sqlite": "2e28aa2cbd3d82b2605c2ad29359c5f151d69c4a26928722610193638571ee1f",
-    "corpus.vectors.npy": "b3021fb9e417861048ad01682fe59305deb249c135f861ead6698a360622a17f",
+    "corpus.sqlite": "2dab3e7cb23ee5e89ea80cf04f21eb7d4974e3226300dd8de35e17b5017fc01a",
+    "corpus.vectors.npy": "b1fedd26f3fe21f8c88761f9eb190bd1221db52e18241cc5a296e7122b76057d",
     "documents.jsonl": "042195c9fcd923f466646c5e390a00d56befcbe6baf4571b33aebc8ccf02b230",
     "endpoint_preflight.json": "28984995579c950133a0db4137fe5fab0fb7aff504e8a030a835e5b4abbc9866",
     "figures.jsonl": "eb4411fcadf385ebb7604df90860e04018254ddac851bc1c6db73c0fe056d270",
     "furniture.jsonl": "bb25fb2864493d55230928c2bed8c1414d3a15637212846361ecf58841c89588",
     "navigation_tree.json": "23a3b5e76dd2425198ede365c026a5890bf3de568d89f9a12cb89c2a7792c23f",
-    "prepared_manifest.json": "c189a5dd5372a4537f47a63991e8b752e5c293a58c9b97b13592feb1d6e13657",
+    "prepared_manifest.json": "a2b5d73b1fc74c29850b83a9c8a83b80520a80ebf4610eafa2ea7f4da05fc8e2",
     "sections.jsonl": "8cf68f744347140f1a8415f7bc910bea297cedfdb3ff7f7f500bc6b4abfac502",
     "skill_paths.json": "687df8cbdfee6019654299bf12fb379e5497ae9c0e8abe56123eea9b914f6147",
     "source_layout_audit.json": "5b2bc2182860578ff1fa39bf422e5060689df8fdef7deda5138661ae77ab562e",
@@ -110,7 +108,6 @@
     "llm_audit/calibration.request.json": "c452f9a1f5d9c15a311bc7898f1befcded0e4037d1231edd343cf507f046f089",
     "llm_audit/calibration.response.json": "1ad8ce4a78d89e2d26beea255ae3b71c1be6ea718b460dae0a65aa43a567fa87",
     "llm_audit/preflight.json": "8643ded7f11b1b135a186a400d099e817c22813a9beb905c3bd6c469376209bf",
-    "skills/navigation_policy.md": "69a79672e110f8d8d349737305483df396c6b4d47213a0d8bc5adaee89ad0d51",
     "llm_audit/requests/03acfec4a945795ce6e0195f1d92ecf98185508c92f9e627d54e92ec6d2cb768/attempt-1.request.json": "c35da0222984e66e88882052e20d3bd9108dd28eb6c64aae14f8b735b6b185a0",
     "llm_audit/requests/03acfec4a945795ce6e0195f1d92ecf98185508c92f9e627d54e92ec6d2cb768/attempt-1.response.json": "22586ea1863fef52e09ae0ba260d5597e4729b4519fce3ebb99c5c333b7d050d",
     "llm_audit/requests/03acfec4a945795ce6e0195f1d92ecf98185508c92f9e627d54e92ec6d2cb768/input.json": "74ffe04baa49d098440e5bf35450d4ac91999756a6af5aeda1493120516f8922",
@@ -355,6 +352,7 @@
     "llm_audit/requests/f642755c522c3e7e69dc8e48adba1340a675d1453c774d34678baa0b27871118/attempt-1.response.json": "80b2679e39114edf545454826040000f0e5d30631f8ff62335d9c2e5ccf45b70",
     "llm_audit/requests/f642755c522c3e7e69dc8e48adba1340a675d1453c774d34678baa0b27871118/input.json": "59b6bd6590970d09d3c1ce6554cd3ca6f9c76db6c25409e22ea7fc6c10878c3c",
     "llm_audit/requests/f642755c522c3e7e69dc8e48adba1340a675d1453c774d34678baa0b27871118/result.json": "74723fa6dee48ef8f76806d1b5122fe8c23a44e222ed6645206eaf80ef9c289d",
+    "skills/navigation_policy.md": "69a79672e110f8d8d349737305483df396c6b4d47213a0d8bc5adaee89ad0d51",
     "skills/nodes/n_02314730393c4e05f7c3c94c.md": "652c81dffc56a5af18c04e5c0fa627b5ab7f3d502e560d5b9a46e8fa69f87524",
     "skills/nodes/n_0499bdd5732c1f6cd30c703a.md": "5b7c102250ca249a606f90446343b6b749c61441b063ce08338257d84e6f287f",
     "skills/nodes/n_053d5d5664654ddfb93f1966.md": "a77c70bb091918381ba2a511ecad3da465ebb0758ca20f4e0c040397501c0ef4",
@@ -540,5 +538,6 @@
     "skills/nodes/n_fa355f0ca4693fceccce9790.md": "8d15affe33b5c52062e0e522ba5e51e9e75fa6ca6e08777f5ce549b677aa9f99",
     "skills/nodes/n_fc4c14998ff5af9c0b814ea0.md": "d913d3f3fa6e1e90d9f89782f8a1b3feafcc7f0ef4b65976b2fe5a4d48fad607",
     "skills/nodes/n_ff48e981df0c457fd7318e0b.md": "47f9febefd75b41c657f5aa25d33dde6d294998c3bd97af923b5ec34c4a9e0d8"
-  }
+  },
+  "source_manifest_sha256": "a84c813b4e2828b2d205d22164ebe06c836e32b78e0ac66a4eaab6e3ea90ec25"
 }

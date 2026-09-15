@@ -11,18 +11,16 @@
   },
   "started_at": 1788984715.7837882,
   "embedding": {
-    "encoder": "qwen3_remote",
-    "model": "Qwen/Qwen3-Embedding-8B",
-    "revision": "1d8ad4ca9b3dd8059ad90a75d4983776a23d44af",
-    "device": "JJ:cuda:0,1",
-    "query_prefix": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "device": "cpu",
+    "query_prefix": "",
     "passage_prefix": "",
-    "pooling": "last token + L2",
-    "dtype": "bfloat16; float32 normalization/output",
-    "max_tokens": 32768,
-    "dimensions": 4096,
-    "torch": "2.9.1+cu128",
-    "transformers": "4.57.6"
+    "pooling": "CLS + L2",
+    "dtype": "float32",
+    "max_tokens": 8192,
+    "dimensions": 1024,
+    "encoder": "bge"
   },
   "llm_configuration": {
     "endpoint": "http://127.0.0.1:11440",
@@ -64,7 +62,7 @@
     "furniture": 367,
     "units": 151
   },
-  "preparation_fingerprint": "323d975238c7a02fd36207944c808ce932b61cc9b3f4eeefec5da206de85c1a3",
+  "preparation_fingerprint": "1475bd19db57f5289138312602cec3bbdfb1d2caeceff057e82263922a6de65d",
   "llm_cost": {
     "generation_calls": 61,
     "cache_hits": 0,

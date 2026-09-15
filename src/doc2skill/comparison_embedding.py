@@ -1,4 +1,9 @@
-"""Pinned local BGE encoding for comparison; no truncation or E5 impersonation."""
+"""Pinned local BGE encoding for comparison; no truncation or E5 impersonation.
+
+BGE-M3 follows the BGE dense interface but has a multilingual 8,192-token
+context and does not use the BGE v1.5 query instruction.  Keep those settings
+explicit so changing the model cannot silently change the vector contract.
+"""
 from __future__ import annotations
 
 import re
@@ -13,9 +18,10 @@ class BGEEncoder(E5Encoder):
         self.revision = config['revision']
         if not re.fullmatch(r'[0-9a-f]{40}', self.revision):
             raise ValueError('BGE requires an immutable revision')
+        model_source = config.get('local_path') or self.model_id
         options = dict(revision=self.revision, local_files_only=True,
                        trust_remote_code=False, cache_dir=config.get('cache_dir'))
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id, **options)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_source, **options)
         resolved_tokenizer = self.tokenizer.init_kwargs.get('_commit_hash')
         if resolved_tokenizer and resolved_tokenizer != self.revision:
             raise ValueError('Loaded BGE tokenizer revision differs from the pinned revision')
@@ -23,13 +29,16 @@ class BGEEncoder(E5Encoder):
         if not tokenizer_only:
             import torch
             torch.set_num_threads(int(config.get('threads', 4)))
-            self.model = AutoModel.from_pretrained(self.model_id, **options).to('cpu').eval()
+            self.model = AutoModel.from_pretrained(model_source, **options).to('cpu').eval()
             resolved_model = getattr(self.model.config, '_commit_hash', None)
             if resolved_model and resolved_model != self.revision:
                 raise ValueError('Loaded BGE model revision differs from the pinned revision')
+        self.is_m3 = self.model_id.lower().rstrip('/').endswith('bge-m3')
+        self.max_tokens = 8192 if self.is_m3 else 512
+        self.query_prefix = '' if self.is_m3 else 'Represent this sentence for searching relevant passages: '
         self.provenance = dict(model=self.model_id, revision=self.revision, device='cpu',
-            query_prefix='Represent this sentence for searching relevant passages: ',
-            passage_prefix='', pooling='CLS + L2', dtype='float32', max_tokens=512,
+            query_prefix=self.query_prefix, passage_prefix='', pooling='CLS + L2', dtype='float32',
+            max_tokens=self.max_tokens, dimensions=int(self.model.config.hidden_size) if self.model else None,
             encoder='bge')
 
     def _encode(self, texts, prefix):
@@ -40,8 +49,8 @@ class BGEEncoder(E5Encoder):
         prepared = [prefix + text for text in texts]
         for i, text in enumerate(prepared):
             count = len(self.tokenizer.encode(text, add_special_tokens=True))
-            if count > 512:
-                raise ValueError(f'Embedding input {i} has {count} tokens; limit=512; no truncation')
+            if count > self.max_tokens:
+                raise ValueError(f'Embedding input {i} has {count} tokens; limit={self.max_tokens}; no truncation')
         arrays = []
         for start in range(0, len(prepared), int(self.config.get('batch_size', 8))):
             batch = self.tokenizer(prepared[start:start + int(self.config.get('batch_size', 8))],
@@ -55,7 +64,7 @@ class BGEEncoder(E5Encoder):
         return self._encode(texts, '')
 
     def encode_queries(self, texts):
-        return self._encode(texts, self.provenance['query_prefix'])
+        return self._encode(texts, self.query_prefix)
 
 
 def comparison_encoder(config, *, tokenizer_only=False):
