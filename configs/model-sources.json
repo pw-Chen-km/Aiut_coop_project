@@ -1,0 +1,22 @@
+{
+  "e5": {
+    "repository": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "local_directory": "models/e5",
+    "files": ["config.json", "model.safetensors", "tokenizer.json", "tokenizer_config.json", "special_tokens_map.json", "sentencepiece.bpe.model"]
+  },
+  "qwen": {
+    "repository": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+    "revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "filename": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "local_directory": "models/qwen",
+    "note": "Public conversion for new benchmark runs. Equality with any previous private checkpoint has not been established."
+  },
+  "llama_cpp": {
+    "repository": "https://github.com/ggml-org/llama.cpp",
+    "release": "b12449",
+    "windows_x64_cpu_url": "https://github.com/ggml-org/llama.cpp/releases/download/b12449/llama-b12449-bin-win-cpu-x64.zip",
+    "windows_x64_cpu_archive_sha256": "461d13cd0c991427dccabb89535a1545089f36d7e4bf78e698fc8061a3344bf0",
+    "validation": "Release metadata checked; live Windows execution and end-to-end Jev inference not yet tested."
+  }
+}

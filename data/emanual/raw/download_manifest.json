@@ -1,0 +1,12 @@
+{
+  "dataset": "galileo-ai/ragbench",
+  "files": {
+    "DATASET_CARD.md": "1afeca59575e9508432990054fd75b18b851a384376e2dd7e83852655f33cbe5",
+    "test.jsonl": "3b05b174566254d5a3d9d2ff2c43fc1a369ceb22d6c9831ff49b857af421301b",
+    "test.parquet": "ba6164b48ec0792f9072f952af60062a14d1412dd472ddf08bd50b7006fc4504"
+  },
+  "license": "CC-BY-4.0",
+  "revision": "97808f3e5fd16ede40bbff6c2949af8139b2eb7b",
+  "split": "test",
+  "subset": "emanual"
+}

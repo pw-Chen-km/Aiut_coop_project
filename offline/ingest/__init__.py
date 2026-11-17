@@ -1,2 +1,0 @@
-"""PDF ingestion entry points."""
-

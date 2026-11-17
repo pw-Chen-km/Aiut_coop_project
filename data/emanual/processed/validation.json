@@ -1,0 +1,42 @@
+{
+  "chunk_count": 115,
+  "chunk_policy": "sentence_boundary_preferred_exact_contiguous_no_overlap",
+  "corpus_scope": "union_of_supplied_test_passages_not_full_original_manuals",
+  "deduplication": "identical_question_string; evidence_union; all_valid_references_retained",
+  "input_sha256": "3b05b174566254d5a3d9d2ff2c43fc1a369ceb22d6c9831ff49b857af421301b",
+  "invalid_rows": [
+    {
+      "reasons": [
+        "unmapped_evidence_key"
+      ],
+      "row_id": "emanual_1",
+      "unmapped_keys": [
+        "0b.",
+        "0e.",
+        "2c.",
+        "2d.",
+        "2e."
+      ]
+    },
+    {
+      "reasons": [
+        "unmapped_evidence_key"
+      ],
+      "row_id": "emanual_539",
+      "unmapped_keys": [
+        "0b.",
+        "0c.",
+        "0d.",
+        "0e."
+      ]
+    }
+  ],
+  "mapping": "exact_sentence_key_membership_then_verbatim_source_span",
+  "max_e5_tokens": 384,
+  "max_observed_e5_tokens": 382,
+  "raw_rows": 132,
+  "source_count": 102,
+  "tokenizer_sha256": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+  "unique_questions": 66,
+  "valid_rows": 130
+}

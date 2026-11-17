@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.parquet -text
+assets/e5-tokenizer/tokenizer.json -diff

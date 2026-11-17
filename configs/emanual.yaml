@@ -1,0 +1,25 @@
+dataset_dir: data/emanual/processed
+taxonomy: data/emanual/annotations/taxonomy.json
+labels: data/emanual/annotations/source_topics.jsonl
+e5_tokenizer: assets/e5-tokenizer/tokenizer.json
+# The README downloads E5 into this ignored directory. Existing local assets may
+# be selected with a different path in configs/local.yaml.
+e5_model_dir: models/e5
+index_dir: artifacts/emanual-e5-v2
+results_dir: results
+model_endpoint: http://127.0.0.1:8073
+expected_model_marker: 4b
+timeout_seconds: 180
+context_tokens: 8192
+answer_max_tokens: 512
+jev_prompt: prompts/query_topic_jev.txt
+answer_prompt: prompts/answer.txt
+n_probs: 256
+max_n_probs: 1024
+candidate_k: 20
+final_k: 5
+rrf_k: 60
+soft_weights: [1, 1, 1]
+variants: [baseline, hard_topic, soft_topic]
+seed: 20261117
+

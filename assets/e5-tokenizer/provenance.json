@@ -1,0 +1,9 @@
+{
+  "files": {
+    "special_tokens_map.json": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7",
+    "tokenizer.json": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+    "tokenizer_config.json": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b"
+  },
+  "model_id": "intfloat/multilingual-e5-small",
+  "origin": "Copied tokenizer files from existing local E5 assets; weights are not copied"
+}

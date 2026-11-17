@@ -1,0 +1,20 @@
+{
+  "version": "emanual-source-reviewed-v1",
+  "options": {
+    "1": "Picture quality, screen settings and Ambient Mode",
+    "2": "Sound, speakers and audio settings",
+    "3": "Broadcast channels, tuning and favorites",
+    "4": "Recording, Timeshift and scheduled viewing",
+    "5": "Apps, Smart Hub and multimedia playback",
+    "6": "Network, mobile connections and external device inputs",
+    "7": "Remote control, Bixby and accessibility",
+    "8": "Power, energy saving, clock and timers",
+    "9": "Support, diagnostics, software updates, resets and e-Manual",
+    "10": "Samsung accounts, PIN protection and security"
+  },
+  "status": "source_reviewed_pending_user_protocol_approval",
+  "construction": "Codex assistant read all 102 supplied source texts, without question/answer use for labeling",
+  "query_task": "primary_topic_categorical",
+  "source_task": "multi_label_substantive_coverage",
+  "other_option": false
+}
